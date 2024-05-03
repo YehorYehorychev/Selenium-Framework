@@ -29,7 +29,6 @@
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/myFirstTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/myFirstTestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
@@ -83,7 +82,7 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer">
     <configuration name="MyFirstTestCase.dummyTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <extension name="coverage">
@@ -102,8 +101,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="myFirstTestCase.guestCheckoutUsingDirectBankTransfer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MasterSeleniumFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.selenium" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.myFirstTestCase" />
+      <option name="METHOD_NAME" value="guestCheckoutUsingDirectBankTransfer" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer" />
         <item itemvalue="TestNG.MyFirstTestCase.dummyTest" />
       </list>
     </recent_temporary>

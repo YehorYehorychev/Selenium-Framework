@@ -22,8 +22,16 @@ public class myFirstTestCase {
         driver.findElement(By.cssSelector("a[title='View cart']")).click();
         Assert.assertEquals(driver.findElement(By.cssSelector("td[class='product-name'] a")).getText(), "Blue Shoes");
         driver.findElement(By.cssSelector(".checkout-button")).click();
-
-
-        //        driver.quit();
+        driver.findElement(By.cssSelector("#billing_first_name")).sendKeys("demo");
+        driver.findElement(By.cssSelector("#billing_last_name")).sendKeys("test");
+        driver.findElement(By.cssSelector("#billing_company")).sendKeys("google");
+        driver.findElement(By.cssSelector("#billing_address_1")).sendKeys("San Francisco");
+        driver.findElement(By.cssSelector("#billing_city")).sendKeys("San Francisco");
+        driver.findElement(By.cssSelector("#billing_postcode")).sendKeys("94040");
+        driver.findElement(By.cssSelector("#billing_email")).sendKeys("test@test.com");
+        driver.findElement(By.cssSelector("#place_order")).click();
+        Assert.assertEquals(driver.findElement(By.cssSelector(".woocommerce-notice")).getText(), "Thank you. Your order has been received.");
+        driver.close();
+        driver.quit();
     }
 }
