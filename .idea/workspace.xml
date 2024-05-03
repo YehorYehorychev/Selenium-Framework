@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3222d90b-25cc-445b-8ae6-8f4fd24d58e7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/incapsulation/Computer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/incapsulation/Laptop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/incapsulation/LaptopAndMobileRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/incapsulation/Mobile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/incapsulation/OopLessonRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/incapsulation/Ram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/incapsulation/Ssd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/lesson1/TestExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/lesson2/Bmw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/lesson2/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/lesson2/Computer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/lesson2/ComputerRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/task/StringBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/task/TimeInterval.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdvancedOOP/src/main/java/com/yehor/oop/task/TimeIntervalRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "YehorYehorychev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/YehorYehorychev/Selenium-Framework.git",
+    "accountId": "2eaedab0-da97-4b97-a88c-69933c8f0293"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2fwAyWS8gGwgigcsVsCmY61VVfl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "PrjctSetup",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3222d90b-25cc-445b-8ae6-8f4fd24d58e7" name="Changes" comment="" />
+      <created>1714702020954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714702020954</updated>
+    </task>
+    <servers />
+  </component>
+</project>
