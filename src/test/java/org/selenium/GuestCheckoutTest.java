@@ -44,6 +44,23 @@ public class GuestCheckoutTest {
         verifyOrderConfirmation();
     }
 
+    @Test
+    public void loginAndCheckoutUsingDirectBankTransfer() {
+        navigateToProduct();
+        searchForProduct("Blue");
+        verifySearchResults("Blue");
+
+        addToCart("Blue Shoes");
+        goToCart();
+        verifyProductInCart("Blue Shoes");
+
+        proceedToCheckout();
+        loginToAccountFromCheckoutPage();
+        fillBillingDetails();
+        placeOrder();
+        verifyOrderConfirmation();
+    }
+
 //    ###################################################  METHODS  ###############################################################
 
     private void navigateToProduct() {
@@ -78,14 +95,18 @@ public class GuestCheckoutTest {
         driver.findElement(By.cssSelector(".checkout-button")).click();
     }
 
+    private void loginToAccountFromCheckoutPage() {
+        driver.findElement(By.cssSelector(".showlogin")).click();
+    }
+
     private void fillBillingDetails() {
-        driver.findElement(By.cssSelector("#billing_first_name")).sendKeys("demo");
+        driver.findElement(By.cssSelector("#billing_first_name")).sendKeys("yehor");
         driver.findElement(By.cssSelector("#billing_last_name")).sendKeys("test");
         driver.findElement(By.cssSelector("#billing_company")).sendKeys("google");
         driver.findElement(By.cssSelector("#billing_address_1")).sendKeys("San Francisco");
         driver.findElement(By.cssSelector("#billing_city")).sendKeys("San Francisco");
         driver.findElement(By.cssSelector("#billing_postcode")).sendKeys("94040");
-        driver.findElement(By.cssSelector("#billing_email")).sendKeys("test@test.com");
+        driver.findElement(By.cssSelector("#billing_email")).sendKeys("yehor@test.com");
     }
 
     private void placeOrder() {
