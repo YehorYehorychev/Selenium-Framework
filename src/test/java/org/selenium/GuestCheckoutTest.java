@@ -45,7 +45,7 @@ public class GuestCheckoutTest {
     }
 
     @Test
-    public void loginAndCheckoutUsingDirectBankTransfer() {
+    public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() {
         navigateToProduct();
         searchForProduct("Blue");
         verifySearchResults("Blue");
@@ -97,6 +97,11 @@ public class GuestCheckoutTest {
 
     private void loginToAccountFromCheckoutPage() {
         driver.findElement(By.cssSelector(".showlogin")).click();
+        WebElement login = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#username")));
+        WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#password")));
+        login.sendKeys("yehor");
+        password.sendKeys("yehor123");
+        driver.findElement(By.cssSelector("button[value='Login']")).click();
     }
 
     private void fillBillingDetails() {
@@ -105,8 +110,16 @@ public class GuestCheckoutTest {
         driver.findElement(By.cssSelector("#billing_company")).sendKeys("google");
         driver.findElement(By.cssSelector("#billing_address_1")).sendKeys("San Francisco");
         driver.findElement(By.cssSelector("#billing_city")).sendKeys("San Francisco");
-        driver.findElement(By.cssSelector("#billing_postcode")).sendKeys("94040");
-        driver.findElement(By.cssSelector("#billing_email")).sendKeys("yehor@test.com");
+        WebElement postcode = driver.findElement(By.cssSelector("#billing_postcode"));
+        String currentPostcode = postcode.getAttribute("value");
+        if (!"94040".equals(currentPostcode)) {
+            postcode.clear();
+            postcode.sendKeys("94040");
+        }
+        WebElement email = driver.findElement(By.cssSelector("#billing_email"));
+        if (!"yehor@test.com".equals(email.getAttribute("value"))) {
+            email.sendKeys("yehor@test.com");
+        }
     }
 
     private void placeOrder() {
