@@ -29,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/myFirstTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/myFirstTestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
@@ -74,6 +75,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.MyFirstTestCase.dummyTest.executor": "Run",
+    "TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer.executor": "Run",
     "git-widget-placeholder": "FirstTestcase",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
