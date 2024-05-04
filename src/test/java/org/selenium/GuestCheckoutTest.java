@@ -61,7 +61,7 @@ public class GuestCheckoutTest {
         verifyOrderConfirmation();
     }
 
-//    ###################################################  METHODS  ###############################################################
+// ############################################  METHODS  ############################################
 
     private void navigateToProduct() {
         driver.findElement(By.cssSelector("#menu-item-1227 > a")).click();
