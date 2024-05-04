@@ -44,7 +44,24 @@ public class GuestCheckoutTest {
         verifyOrderConfirmation();
     }
 
-//    ###################################################  METHODS  ###############################################################
+    @Test
+    public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() {
+        navigateToProduct();
+        searchForProduct("Blue");
+        verifySearchResults("Blue");
+
+        addToCart("Blue Shoes");
+        goToCart();
+        verifyProductInCart("Blue Shoes");
+
+        proceedToCheckout();
+        loginToAccountFromCheckoutPage();
+        fillBillingDetails();
+        placeOrder();
+        verifyOrderConfirmation();
+    }
+
+// ############################################  METHODS  ############################################
 
     private void navigateToProduct() {
         driver.findElement(By.cssSelector("#menu-item-1227 > a")).click();
@@ -78,14 +95,31 @@ public class GuestCheckoutTest {
         driver.findElement(By.cssSelector(".checkout-button")).click();
     }
 
+    private void loginToAccountFromCheckoutPage() {
+        driver.findElement(By.cssSelector(".showlogin")).click();
+        WebElement login = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#username")));
+        WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#password")));
+        login.sendKeys("yehor");
+        password.sendKeys("yehor123");
+        driver.findElement(By.cssSelector("button[value='Login']")).click();
+    }
+
     private void fillBillingDetails() {
-        driver.findElement(By.cssSelector("#billing_first_name")).sendKeys("demo");
+        driver.findElement(By.cssSelector("#billing_first_name")).sendKeys("yehor");
         driver.findElement(By.cssSelector("#billing_last_name")).sendKeys("test");
         driver.findElement(By.cssSelector("#billing_company")).sendKeys("google");
         driver.findElement(By.cssSelector("#billing_address_1")).sendKeys("San Francisco");
         driver.findElement(By.cssSelector("#billing_city")).sendKeys("San Francisco");
-        driver.findElement(By.cssSelector("#billing_postcode")).sendKeys("94040");
-        driver.findElement(By.cssSelector("#billing_email")).sendKeys("test@test.com");
+        WebElement postcode = driver.findElement(By.cssSelector("#billing_postcode"));
+        String currentPostcode = postcode.getAttribute("value");
+        if (!"94040".equals(currentPostcode)) {
+            postcode.clear();
+            postcode.sendKeys("94040");
+        }
+        WebElement email = driver.findElement(By.cssSelector("#billing_email"));
+        if (!"yehor@test.com".equals(email.getAttribute("value"))) {
+            email.sendKeys("yehor@test.com");
+        }
     }
 
     private void placeOrder() {
