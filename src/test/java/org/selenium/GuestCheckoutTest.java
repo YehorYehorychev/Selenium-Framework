@@ -1,17 +1,12 @@
 package org.selenium;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.*;
-
 import org.selenium.pom.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.time.Duration;
-
-public class GuestCheckoutTest  extends BaseTest {
+public class GuestCheckoutTest extends BaseTest {
 
     @Test
     public void guestCheckoutUsingDirectBankTransfer() {
