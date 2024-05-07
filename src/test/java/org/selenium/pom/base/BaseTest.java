@@ -1,9 +1,9 @@
-package org.selenium.pom;
+package org.selenium.pom.base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.selenium.factory.DriverManager;
+import org.selenium.pom.factory.DriverManager;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

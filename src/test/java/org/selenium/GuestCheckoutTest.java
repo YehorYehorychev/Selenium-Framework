@@ -2,7 +2,7 @@ package org.selenium;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
-import org.selenium.pom.BaseTest;
+import org.selenium.pom.base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
