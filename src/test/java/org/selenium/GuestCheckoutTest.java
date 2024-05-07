@@ -5,28 +5,13 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.*;
 
+import org.selenium.pom.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.time.Duration;
 
-public class GuestCheckoutTest {
-
-    private WebDriver driver;
-    private WebDriverWait wait;
-
-    @BeforeClass
-    public void setUpClass() {
-        WebDriverManager.chromedriver().setup();
-    }
-
-    @BeforeMethod
-    public void setUp() {
-        driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-        driver.get("https://askomdch.com");
-    }
+public class GuestCheckoutTest  extends BaseTest {
 
     @Test
     public void guestCheckoutUsingDirectBankTransfer() {
@@ -135,15 +120,5 @@ public class GuestCheckoutTest {
     private void verifyOrderConfirmation() {
         WebElement wooNotice = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".woocommerce-notice")));
         Assert.assertEquals(wooNotice.getText(), "Thank you. Your order has been received.");
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
-
-    @AfterClass
-    public void tearDownClass() {
-        WebDriverManager.chromedriver().clearDriverCache();
     }
 }
