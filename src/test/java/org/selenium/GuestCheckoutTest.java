@@ -3,6 +3,8 @@ package org.selenium;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
 import org.selenium.pom.base.BaseTest;
+import org.selenium.pom.pages.HomePage;
+import org.selenium.pom.pages.StorePage;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -10,6 +12,9 @@ public class GuestCheckoutTest extends BaseTest {
 
     @Test
     public void guestCheckoutUsingDirectBankTransfer() {
+        HomePage homePage = new HomePage(driver);
+        StorePage storePage = homePage.clickStoreMenuLink();
+
         navigateToProduct();
         searchForProduct("Blue");
         verifySearchResults("Blue");
@@ -41,7 +46,7 @@ public class GuestCheckoutTest extends BaseTest {
         verifyOrderConfirmation();
     }
 
-// ############################################  METHODS  ############################################
+    // ############################################  METHODS  ############################################
 
     private void navigateToProduct() {
         driver.findElement(By.cssSelector("#menu-item-1227 > a")).click();
