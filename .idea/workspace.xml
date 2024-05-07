@@ -29,8 +29,6 @@
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/GuestCheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/GuestCheckoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/factory/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/factory/DriverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
