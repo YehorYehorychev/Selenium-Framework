@@ -3,6 +3,7 @@ package org.selenium;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
 import org.selenium.pom.base.BaseTest;
+import org.selenium.pom.pages.CartPage;
 import org.selenium.pom.pages.HomePage;
 import org.selenium.pom.pages.StorePage;
 import org.testng.Assert;
@@ -16,18 +17,22 @@ public class GuestCheckoutTest extends BaseTest {
         StorePage storePage = homePage.clickStoreMenuLink();
         storePage.search("Blue");
         Assert.assertEquals(storePage.getTitle(), "Search results: “Blue”");
-        storePage.clickAddToCartButton();
+        storePage.clickAddToCartButton("Blue Shoes");
+        CartPage cartPage = storePage.clickViewCart();
+        Assert.assertEquals(cartPage.getProductName(), "Blue Shoes");
+
+        CheckoutPage checkoutPage = cartPage.clickCheckoutButton();
 
 
-        navigateToProduct();
-        searchForProduct("Blue");
-        verifySearchResults("Blue");
+//        navigateToProduct();
+//        searchForProduct("Blue");
+//        verifySearchResults("Blue");
+//
+//        addToCart("Blue Shoes");
+//        goToCart();
+//        verifyProductInCart("Blue Shoes");
 
-        addToCart("Blue Shoes");
-        goToCart();
-        verifyProductInCart("Blue Shoes");
-
-        proceedToCheckout();
+//        proceedToCheckout();
         fillBillingDetails();
         placeOrder();
         verifyOrderConfirmation();
@@ -35,15 +40,15 @@ public class GuestCheckoutTest extends BaseTest {
 
     @Test
     public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() {
-        navigateToProduct();
-        searchForProduct("Blue");
-        verifySearchResults("Blue");
+//        navigateToProduct();
+//        searchForProduct("Blue");
+//        verifySearchResults("Blue");
+//
+//        addToCart("Blue Shoes");
+//        goToCart();
+//        verifyProductInCart("Blue Shoes");
 
-        addToCart("Blue Shoes");
-        goToCart();
-        verifyProductInCart("Blue Shoes");
-
-        proceedToCheckout();
+//        proceedToCheckout();
         loginToAccountFromCheckoutPage();
         fillBillingDetails();
         placeOrder();
@@ -52,37 +57,12 @@ public class GuestCheckoutTest extends BaseTest {
 
     // ############################################  METHODS  ############################################
 
-    private void navigateToProduct() {
-        driver.findElement(By.cssSelector("#menu-item-1227 > a")).click();
-    }
-
-    private void searchForProduct(String productName) {
-        driver.findElement(By.id("woocommerce-product-search-field-0")).sendKeys(productName);
-        driver.findElement(By.cssSelector("button[value='Search']")).click();
-    }
-
-    private void verifySearchResults(String expectedTitle) {
-        String actualTitle = driver.findElement(By.cssSelector(".woocommerce-products-header__title.page-title")).getText();
-        Assert.assertEquals(actualTitle, "Search results: “" + expectedTitle + "”");
-    }
-
-    private void addToCart(String productName) {
-        driver.findElement(By.cssSelector("a[aria-label='Add “" + productName + "” to your cart']")).click();
-    }
-
-    private void goToCart() {
-        WebElement viewCartButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a[title='View cart']")));
-        viewCartButton.click();
-    }
 
     private void verifyProductInCart(String expectedProductName) {
         String actualProductName = driver.findElement(By.cssSelector("td[class='product-name'] a")).getText();
         Assert.assertEquals(actualProductName, expectedProductName);
     }
 
-    private void proceedToCheckout() {
-        driver.findElement(By.cssSelector(".checkout-button")).click();
-    }
 
     private void loginToAccountFromCheckoutPage() {
         driver.findElement(By.cssSelector(".showlogin")).click();
