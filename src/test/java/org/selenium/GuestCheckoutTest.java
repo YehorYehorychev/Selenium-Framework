@@ -14,9 +14,7 @@ public class GuestCheckoutTest extends BaseTest {
     public void guestCheckoutUsingDirectBankTransfer() {
         HomePage homePage = new HomePage(driver);
         StorePage storePage = homePage.clickStoreMenuLink();
-        storePage
-                .enterTextInSearchField("Blue")
-                .clickSearchButton();
+        storePage.search("Blue");
         Assert.assertEquals(storePage.getTitle(), "Search results: “Blue”");
         storePage.clickAddToCartButton();
 
