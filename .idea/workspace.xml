@@ -29,6 +29,9 @@
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaLearning/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/GuestCheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/GuestCheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +88,11 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.selenium.pom.pages" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer">
     <configuration name="GuestCheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
