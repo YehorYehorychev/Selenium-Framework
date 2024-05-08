@@ -16,7 +16,7 @@ public class GuestCheckoutTest extends BaseTest {
         StorePage storePage = homePage.clickStoreMenuLink();
         storePage.search("Blue");
         Assert.assertEquals(storePage.getTitle(), "Search results: “Blue”");
-        storePage.clickAddToCartButton();
+        storePage.clickAddToCartButton("Blue Shoes");
 
 
         navigateToProduct();
