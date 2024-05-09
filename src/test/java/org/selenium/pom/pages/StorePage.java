@@ -34,7 +34,7 @@ public class StorePage extends BasePage {
     }
 
     private By getAddToCartButtonElement(String productName) {
-        return By.cssSelector("a[aria-label='Add “" + productName + "”  to your cart']");
+        return By.cssSelector("a[aria-label='Add “" + productName + "” to your cart']");
     }
 
     public void clickAddToCartButton(String productName) {

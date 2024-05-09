@@ -25,31 +25,32 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage enterLastName(String lastName) {
-        driver.findElement(firstNameField).sendKeys(lastName);
+        driver.findElement(lastNameField).sendKeys(lastName);
         return this;
     }
 
     public CheckoutPage enterAddressLineOne(String addressLineOne) {
-        driver.findElement(firstNameField).sendKeys(addressLineOne);
+        driver.findElement(addressLineOneField).sendKeys(addressLineOne);
         return this;
     }
 
     public CheckoutPage enterCity(String city) {
-        driver.findElement(firstNameField).sendKeys(city);
+        driver.findElement(billingCityField).sendKeys(city);
         return this;
     }
 
     public CheckoutPage enterPostCode(String postCode) {
-        driver.findElement(firstNameField).sendKeys(postCode);
+        driver.findElement(billingPostCodeField).sendKeys(postCode);
         return this;
     }
 
     public CheckoutPage enterEmail(String email) {
-        driver.findElement(firstNameField).sendKeys(email);
+        driver.findElement(billingEmailField).sendKeys(email);
         return this;
     }
 
-    public CheckoutPage placeOrder() {
+    public CheckoutPage placeOrder() throws InterruptedException {
+        Thread.sleep(1000);
         driver.findElement(placeOrderButton).click();
         return this;
     }
