@@ -1,7 +1,5 @@
 package org.selenium;
 
-import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.*;
 import org.selenium.pom.base.BaseTest;
 import org.selenium.pom.pages.CartPage;
 import org.selenium.pom.pages.CheckoutPage;
@@ -15,7 +13,7 @@ public class GuestCheckoutTest extends BaseTest {
     @Test
     public void guestCheckoutUsingDirectBankTransfer() throws InterruptedException {
         HomePage homePage = new HomePage(driver);
-        StorePage storePage = homePage.clickStoreMenuLink();
+        StorePage storePage = homePage.navigateToStoreUsingMenu();
         storePage.search("Blue");
         Assert.assertEquals(storePage.getTitle(), "Search results: “Blue”");
         Thread.sleep(2000);
@@ -25,7 +23,7 @@ public class GuestCheckoutTest extends BaseTest {
         CartPage cartPage = storePage.clickViewCart();
         Assert.assertEquals(cartPage.getProductName(), "Blue Shoes");
 
-        CheckoutPage checkoutPage = cartPage.clickCheckoutButton();
+        CheckoutPage checkoutPage = cartPage.checkout();
         checkoutPage
                 .enterFirstName("Demo")
                 .enterLastName("QA")
