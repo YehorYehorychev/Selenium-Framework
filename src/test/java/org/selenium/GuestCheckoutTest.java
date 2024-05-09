@@ -4,6 +4,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
 import org.selenium.pom.base.BaseTest;
 import org.selenium.pom.pages.CartPage;
+import org.selenium.pom.pages.CheckoutPage;
 import org.selenium.pom.pages.HomePage;
 import org.selenium.pom.pages.StorePage;
 import org.testng.Assert;
@@ -17,6 +18,7 @@ public class GuestCheckoutTest extends BaseTest {
         StorePage storePage = homePage.clickStoreMenuLink();
         storePage.search("Blue");
         Assert.assertEquals(storePage.getTitle(), "Search results: “Blue”");
+
         storePage.clickAddToCartButton("Blue Shoes");
         CartPage cartPage = storePage.clickViewCart();
         Assert.assertEquals(cartPage.getProductName(), "Blue Shoes");
