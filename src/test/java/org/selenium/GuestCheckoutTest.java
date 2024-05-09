@@ -16,10 +16,10 @@ public class GuestCheckoutTest extends BaseTest {
         StorePage storePage = homePage.navigateToStoreUsingMenu();
         storePage.search("Blue");
         Assert.assertEquals(storePage.getTitle(), "Search results: “Blue”");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         storePage.clickAddToCartButton("Blue Shoes");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         CartPage cartPage = storePage.clickViewCart();
         Assert.assertEquals(cartPage.getProductName(), "Blue Shoes");
 
@@ -32,7 +32,7 @@ public class GuestCheckoutTest extends BaseTest {
                 .enterPostCode("94040")
                 .enterEmail("yehor@test.com")
                 .placeOrder();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 
