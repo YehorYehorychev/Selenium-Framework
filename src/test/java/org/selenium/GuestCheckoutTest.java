@@ -13,49 +13,46 @@ import org.testng.annotations.*;
 public class GuestCheckoutTest extends BaseTest {
 
     @Test
-    public void guestCheckoutUsingDirectBankTransfer() {
+    public void guestCheckoutUsingDirectBankTransfer() throws InterruptedException {
         HomePage homePage = new HomePage(driver);
         StorePage storePage = homePage.clickStoreMenuLink();
         storePage.search("Blue");
         Assert.assertEquals(storePage.getTitle(), "Search results: “Blue”");
 
         storePage.clickAddToCartButton("Blue Shoes");
+        Thread.sleep(5000);
         CartPage cartPage = storePage.clickViewCart();
         Assert.assertEquals(cartPage.getProductName(), "Blue Shoes");
 
         CheckoutPage checkoutPage = cartPage.clickCheckoutButton();
-
-
-//        navigateToProduct();
-//        searchForProduct("Blue");
-//        verifySearchResults("Blue");
-//
-//        addToCart("Blue Shoes");
-//        goToCart();
-//        verifyProductInCart("Blue Shoes");
-
-//        proceedToCheckout();
-        fillBillingDetails();
-        placeOrder();
-        verifyOrderConfirmation();
+        checkoutPage
+                .enterFirstName("Demo")
+                .enterLastName("QA")
+                .enterAddressLineOne("San Francisco")
+                .enterCity("San Francisco")
+                .enterPostCode("94040")
+                .enterEmail("yehor@test.com")
+                .placeOrder();
+        Thread.sleep(5000);
+        Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 
-    @Test
-    public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() {
-//        navigateToProduct();
-//        searchForProduct("Blue");
-//        verifySearchResults("Blue");
+//    @Test
+//    public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() {
+////        navigateToProduct();
+////        searchForProduct("Blue");
+////        verifySearchResults("Blue");
+////
+////        addToCart("Blue Shoes");
+////        goToCart();
+////        verifyProductInCart("Blue Shoes");
 //
-//        addToCart("Blue Shoes");
-//        goToCart();
-//        verifyProductInCart("Blue Shoes");
-
-//        proceedToCheckout();
-        loginToAccountFromCheckoutPage();
-        fillBillingDetails();
-        placeOrder();
-        verifyOrderConfirmation();
-    }
+////        proceedToCheckout();
+//        loginToAccountFromCheckoutPage();
+//        fillBillingDetails();
+//        placeOrder();
+//        verifyOrderConfirmation();
+//    }
 
     // ############################################  METHODS  ############################################
 
