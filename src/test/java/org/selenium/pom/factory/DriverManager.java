@@ -8,7 +8,6 @@ public class DriverManager {
     public WebDriver intializeDriver() {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://askomdch.com");
         return driver;
     }
 }

@@ -1,5 +1,6 @@
 package org.selenium;
 
+import org.bouncycastle.util.Store;
 import org.selenium.pom.base.BaseTest;
 import org.selenium.pom.pages.CartPage;
 import org.selenium.pom.pages.CheckoutPage;
@@ -12,14 +13,14 @@ public class GuestCheckoutTest extends BaseTest {
 
     @Test
     public void guestCheckoutUsingDirectBankTransfer() throws InterruptedException {
-        HomePage homePage = new HomePage(driver);
-        StorePage storePage = homePage.navigateToStoreUsingMenu();
-        storePage.search("Blue");
+        StorePage storePage = new HomePage(driver).
+                load().
+                navigateToStoreUsingMenu().
+                search("Blue");
         Assert.assertEquals(storePage.getTitle(), "Search results: “Blue”");
-        Thread.sleep(1000);
 
         storePage.clickAddToCartButton("Blue Shoes");
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         CartPage cartPage = storePage.clickViewCart();
         Assert.assertEquals(cartPage.getProductName(), "Blue Shoes");
 
@@ -33,17 +34,17 @@ public class GuestCheckoutTest extends BaseTest {
                 enterEmail("yehor@test.com").
                 placeOrder();
 
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 
     @Test
     public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws InterruptedException {
-        HomePage homePage = new HomePage(driver);
-        StorePage storePage = homePage.navigateToStoreUsingMenu();
-        storePage.search("Blue");
+        StorePage storePage = new HomePage(driver).
+                load().
+                navigateToStoreUsingMenu().
+                search("Blue");
         Assert.assertEquals(storePage.getTitle(), "Search results: “Blue”");
-        Thread.sleep(1000);
 
         storePage.clickAddToCartButton("Blue Shoes");
         Thread.sleep(2000);
@@ -52,7 +53,7 @@ public class GuestCheckoutTest extends BaseTest {
 
         CheckoutPage checkoutPage = cartPage.checkout();
         checkoutPage.clickHereToLoginLink();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
         checkoutPage.
                 login("yehor12a", "DemoPassword").
@@ -64,7 +65,7 @@ public class GuestCheckoutTest extends BaseTest {
                 enterEmail("yehor12a@gmail.com").
                 placeOrder();
 
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 }
