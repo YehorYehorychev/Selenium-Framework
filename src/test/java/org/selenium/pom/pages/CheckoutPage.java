@@ -23,4 +23,30 @@ public class CheckoutPage extends BasePage {
         driver.findElement(firstNameField).sendKeys(firstName);
         return this;
     }
+
+    public CheckoutPage enterLastName(String lastName) {
+        driver.findElement(firstNameField).sendKeys(lastName);
+        return this;
+    }
+
+    public CheckoutPage enterAddressLineOne(String addressLineOne) {
+        driver.findElement(firstNameField).sendKeys(addressLineOne);
+        return this;
+    }
+
+    public CheckoutPage enterCity(String city) {
+        driver.findElement(firstNameField).sendKeys(city);
+        return this;
+    }
+
+    public CheckoutPage enterPostCode(String postCode) {
+        driver.findElement(firstNameField).sendKeys(postCode);
+        return this;
+    }
+
+    public CheckoutPage enterEmail(String email) {
+        driver.findElement(firstNameField).sendKeys(email);
+        return this;
+    }
+
 }
