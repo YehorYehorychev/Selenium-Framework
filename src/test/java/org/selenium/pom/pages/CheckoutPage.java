@@ -49,4 +49,12 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
+    public CheckoutPage placeOrder() {
+        driver.findElement(placeOrderButton).click();
+        return this;
+    }
+
+    public String getNotice() {
+        return driver.findElement(successNotice).getText();
+    }
 }
