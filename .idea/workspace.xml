@@ -77,7 +77,7 @@
     "TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer.executor": "Run",
     "TestNG.MyFirstTestCase.dummyTest.executor": "Run",
     "TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer.executor": "Run",
-    "git-widget-placeholder": "DynamicUI",
+    "git-widget-placeholder": "CheckoutPage",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",

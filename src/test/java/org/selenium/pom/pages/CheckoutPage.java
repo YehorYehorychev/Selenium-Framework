@@ -18,4 +18,9 @@ public class CheckoutPage extends BasePage {
     public CheckoutPage(WebDriver driver) {
         super(driver);
     }
+
+    public CheckoutPage enterFirstName(String firstName) {
+        driver.findElement(firstNameField).sendKeys(firstName);
+        return this;
+    }
 }
