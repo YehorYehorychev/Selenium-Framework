@@ -32,14 +32,9 @@ public class GuestCheckoutTest extends BaseTest {
         CartPage cartPage = storePage.clickViewCart();
         Assert.assertEquals(cartPage.getProductName(), "Blue Shoes");
 
-        CheckoutPage checkoutPage = cartPage.checkout();
-        checkoutPage.
-                enterFirstName("Demo").
-                enterLastName("QA").
-                enterAddressLineOne("San Francisco").
-                enterCity("San Francisco").
-                enterPostCode("94040").
-                enterEmail("yehor@test.com").
+        CheckoutPage checkoutPage = cartPage.
+                checkout().
+                setBillingAddress(billingAddress).
                 placeOrder();
 
         Thread.sleep(2000);
@@ -48,6 +43,14 @@ public class GuestCheckoutTest extends BaseTest {
 
     @Test
     public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws InterruptedException {
+        BillingAddress billingAddress = new BillingAddress();
+        billingAddress.setFirstName("Demo");
+        billingAddress.setLastName("QA");
+        billingAddress.setAddressLineOne("San Francisco");
+        billingAddress.setCity("San Francisco");
+        billingAddress.setPostalCode("94040");
+        billingAddress.setEmail("yehor@test.com");
+
         StorePage storePage = new HomePage(driver).
                 load().
                 navigateToStoreUsingMenu().
@@ -65,12 +68,7 @@ public class GuestCheckoutTest extends BaseTest {
 
         checkoutPage.
                 login("yehor12a", "DemoPassword").
-                enterFirstName("Demo").
-                enterLastName("QA").
-                enterAddressLineOne("San Francisco").
-                enterCity("San Francisco").
-                enterPostCode("94040").
-                enterEmail("yehor12a@gmail.com").
+                setBillingAddress(billingAddress).
                 placeOrder();
 
         Thread.sleep(2000);
