@@ -11,13 +11,12 @@ import org.selenium.pom.pages.StorePage;
 import org.selenium.pom.utils.JacksonUtils;
 import org.testng.Assert;
 import org.testng.annotations.*;
-
 import java.io.IOException;
 
 public class GuestCheckoutTest extends BaseTest {
 
     @Test
-    public void guestCheckoutUsingDirectBankTransfer() throws IOException, InterruptedException {
+    public void guestCheckoutUsingDirectBankTransfer() throws IOException {
         String searchFor = "Blue";
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
         Product product = new Product(1215);
@@ -40,7 +39,7 @@ public class GuestCheckoutTest extends BaseTest {
     }
 
     @Test
-    public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws IOException, InterruptedException {
+    public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws IOException {
         String searchFor = "Blue";
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
         UserData userData = JacksonUtils.deserializeJson("userCredentials.json", UserData.class);
