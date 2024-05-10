@@ -62,13 +62,12 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage setBillingAddress(BillingAddress billingAddress) {
-        enterFirstName(billingAddress.getFirstName()).
+        return enterFirstName(billingAddress.getFirstName()).
                 enterLastName(billingAddress.getLastName()).
                 enterAddressLineOne(billingAddress.getAddressLineOne()).
                 enterCity(billingAddress.getCity()).
                 enterPostCode(billingAddress.getPostalCode()).
                 enterEmail(billingAddress.getEmail());
-        return this;
     }
 
     public CheckoutPage placeOrder() throws InterruptedException {
