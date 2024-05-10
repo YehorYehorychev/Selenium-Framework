@@ -6,15 +6,20 @@ import org.selenium.pom.pages.CartPage;
 import org.selenium.pom.pages.CheckoutPage;
 import org.selenium.pom.pages.HomePage;
 import org.selenium.pom.pages.StorePage;
+import org.selenium.pom.utils.JacksonUtils;
 import org.testng.Assert;
 import org.testng.annotations.*;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class GuestCheckoutTest extends BaseTest {
 
     @Test
-    public void guestCheckoutUsingDirectBankTransfer() throws InterruptedException {
-        BillingAddress billingAddress = new BillingAddress("Demo", "QA", "San Francisco",
-                "San Francisco", "94040", "yehor@test.com");
+    public void guestCheckoutUsingDirectBankTransfer() throws InterruptedException, IOException {
+        BillingAddress billingAddress = new BillingAddress();
+        InputStream is = getClass().getClassLoader().getResourceAsStream("myBillingAddress.json");
+        billingAddress = JacksonUtils.deserializeJson(is, billingAddress);
 
         StorePage storePage = new HomePage(driver).
                 load().
@@ -37,9 +42,10 @@ public class GuestCheckoutTest extends BaseTest {
     }
 
     @Test
-    public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws InterruptedException {
-        BillingAddress billingAddress = new BillingAddress("Demo", "QA", "San Francisco",
-                "San Francisco", "94040", "yehor@test.com");
+    public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws InterruptedException, IOException {
+        BillingAddress billingAddress = new BillingAddress();
+        InputStream is = getClass().getClassLoader().getResourceAsStream("myBillingAddress.json");
+        billingAddress = JacksonUtils.deserializeJson(is, billingAddress);
 
         StorePage storePage = new HomePage(driver).
                 load().
