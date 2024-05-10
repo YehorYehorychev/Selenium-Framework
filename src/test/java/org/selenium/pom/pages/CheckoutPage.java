@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.selenium.pom.base.BasePage;
 import org.selenium.pom.objects.BillingAddress;
+import org.selenium.pom.objects.UserData;
 
 public class CheckoutPage extends BasePage {
     private final By firstNameField = By.cssSelector("#billing_first_name");
@@ -70,6 +71,10 @@ public class CheckoutPage extends BasePage {
                 enterEmail(billingAddress.getEmail());
     }
 
+    public CheckoutPage setUserCredentials(UserData userData) {
+        return enterUserCredentials(userData.getLogin(), userData.getPassword());
+    }
+
     public CheckoutPage placeOrder() throws InterruptedException {
         Thread.sleep(1000);
         driver.findElement(placeOrderButton).click();
@@ -93,6 +98,14 @@ public class CheckoutPage extends BasePage {
 
     public CheckoutPage enterPassword(String password) {
         driver.findElement(passwordFiled).clear();
+        driver.findElement(passwordFiled).sendKeys(password);
+        return this;
+    }
+
+    public CheckoutPage enterUserCredentials(String login, String password) {
+        driver.findElement(usernameFiled).clear();
+        driver.findElement(passwordFiled).clear();
+        driver.findElement(usernameFiled).sendKeys(login);
         driver.findElement(passwordFiled).sendKeys(password);
         return this;
     }
