@@ -17,9 +17,7 @@ public class GuestCheckoutTest extends BaseTest {
 
     @Test
     public void guestCheckoutUsingDirectBankTransfer() throws InterruptedException, IOException {
-        BillingAddress billingAddress = new BillingAddress();
-        InputStream is = getClass().getClassLoader().getResourceAsStream("myBillingAddress.json");
-        billingAddress = JacksonUtils.deserializeJson(is, billingAddress);
+        BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
 
         StorePage storePage = new HomePage(driver).
                 load().
@@ -43,9 +41,7 @@ public class GuestCheckoutTest extends BaseTest {
 
     @Test
     public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws InterruptedException, IOException {
-        BillingAddress billingAddress = new BillingAddress();
-        InputStream is = getClass().getClassLoader().getResourceAsStream("myBillingAddress.json");
-        billingAddress = JacksonUtils.deserializeJson(is, billingAddress);
+        BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
 
         StorePage storePage = new HomePage(driver).
                 load().
