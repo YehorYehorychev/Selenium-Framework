@@ -13,13 +13,13 @@ public class GuestCheckoutTest extends BaseTest {
 
     @Test
     public void guestCheckoutUsingDirectBankTransfer() throws InterruptedException {
-        BillingAddress billingAddress = new BillingAddress();
-        billingAddress.setFirstName("Demo");
-        billingAddress.setLastName("QA");
-        billingAddress.setAddressLineOne("San Francisco");
-        billingAddress.setCity("San Francisco");
-        billingAddress.setPostalCode("94040");
-        billingAddress.setEmail("yehor@test.com");
+        BillingAddress billingAddress = new BillingAddress().
+        setFirstName("Demo").
+        setLastName("QA").
+        setAddressLineOne("San Francisco").
+        setCity("San Francisco").
+        setPostalCode("94040").
+        setEmail("yehor@test.com");
 
         StorePage storePage = new HomePage(driver).
                 load().
@@ -43,13 +43,13 @@ public class GuestCheckoutTest extends BaseTest {
 
     @Test
     public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws InterruptedException {
-        BillingAddress billingAddress = new BillingAddress();
-        billingAddress.setFirstName("Demo");
-        billingAddress.setLastName("QA");
-        billingAddress.setAddressLineOne("San Francisco");
-        billingAddress.setCity("San Francisco");
-        billingAddress.setPostalCode("94040");
-        billingAddress.setEmail("yehor@test.com");
+        BillingAddress billingAddress = new BillingAddress().
+                setFirstName("Demo").
+                setLastName("QA").
+                setAddressLineOne("San Francisco").
+                setCity("San Francisco").
+                setPostalCode("94040").
+                setEmail("yehor@test.com");
 
         StorePage storePage = new HomePage(driver).
                 load().
