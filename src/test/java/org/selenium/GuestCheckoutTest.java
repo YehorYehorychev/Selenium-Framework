@@ -3,6 +3,7 @@ package org.selenium;
 import org.selenium.pom.base.BaseTest;
 import org.selenium.pom.objects.BillingAddress;
 import org.selenium.pom.objects.Product;
+import org.selenium.pom.objects.UserData;
 import org.selenium.pom.pages.CartPage;
 import org.selenium.pom.pages.CheckoutPage;
 import org.selenium.pom.pages.HomePage;
@@ -44,6 +45,7 @@ public class GuestCheckoutTest extends BaseTest {
     @Test
     public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws InterruptedException, IOException {
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
+        UserData userData = JacksonUtils.deserializeJson("user.json", UserData.class);
         Product product = new Product(1215);
 
         StorePage storePage = new HomePage(driver).
@@ -62,7 +64,7 @@ public class GuestCheckoutTest extends BaseTest {
         Thread.sleep(2000);
 
         checkoutPage.
-                login("yehor12a", "DemoPassword").
+                setUserCredentials(userData).
                 setBillingAddress(billingAddress).
                 placeOrder();
 
