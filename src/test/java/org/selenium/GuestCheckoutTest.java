@@ -1,18 +1,24 @@
 package org.selenium;
 
-import org.bouncycastle.util.Store;
 import org.selenium.pom.base.BaseTest;
+import org.selenium.pom.objects.BillingAddress;
 import org.selenium.pom.pages.CartPage;
 import org.selenium.pom.pages.CheckoutPage;
 import org.selenium.pom.pages.HomePage;
 import org.selenium.pom.pages.StorePage;
+import org.selenium.pom.utils.JacksonUtils;
 import org.testng.Assert;
 import org.testng.annotations.*;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class GuestCheckoutTest extends BaseTest {
 
     @Test
-    public void guestCheckoutUsingDirectBankTransfer() throws InterruptedException {
+    public void guestCheckoutUsingDirectBankTransfer() throws InterruptedException, IOException {
+        BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
+
         StorePage storePage = new HomePage(driver).
                 load().
                 navigateToStoreUsingMenu().
@@ -24,14 +30,9 @@ public class GuestCheckoutTest extends BaseTest {
         CartPage cartPage = storePage.clickViewCart();
         Assert.assertEquals(cartPage.getProductName(), "Blue Shoes");
 
-        CheckoutPage checkoutPage = cartPage.checkout();
-        checkoutPage.
-                enterFirstName("Demo").
-                enterLastName("QA").
-                enterAddressLineOne("San Francisco").
-                enterCity("San Francisco").
-                enterPostCode("94040").
-                enterEmail("yehor@test.com").
+        CheckoutPage checkoutPage = cartPage.
+                checkout().
+                setBillingAddress(billingAddress).
                 placeOrder();
 
         Thread.sleep(2000);
@@ -39,7 +40,9 @@ public class GuestCheckoutTest extends BaseTest {
     }
 
     @Test
-    public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws InterruptedException {
+    public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws InterruptedException, IOException {
+        BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
+
         StorePage storePage = new HomePage(driver).
                 load().
                 navigateToStoreUsingMenu().
@@ -57,12 +60,7 @@ public class GuestCheckoutTest extends BaseTest {
 
         checkoutPage.
                 login("yehor12a", "DemoPassword").
-                enterFirstName("Demo").
-                enterLastName("QA").
-                enterAddressLineOne("San Francisco").
-                enterCity("San Francisco").
-                enterPostCode("94040").
-                enterEmail("yehor12a@gmail.com").
+                setBillingAddress(billingAddress).
                 placeOrder();
 
         Thread.sleep(2000);
