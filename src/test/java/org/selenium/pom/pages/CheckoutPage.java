@@ -101,14 +101,14 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage enterUserName(String username) {
-        WebElement usernameElement = waitForElementToBeVisible(usernameFiled);
+        WebElement usernameElement = waitForElementToBeClickable(usernameFiled);
         usernameElement.clear();
         usernameElement.sendKeys(username);
         return this;
     }
 
     public CheckoutPage enterPassword(String password) {
-        WebElement passwordElement = waitForElementToBeVisible(passwordFiled);
+        WebElement passwordElement = waitForElementToBeClickable(passwordFiled);
         passwordElement.clear();
         passwordElement.sendKeys(password);
         return this;

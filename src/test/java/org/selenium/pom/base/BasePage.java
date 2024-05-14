@@ -52,6 +52,10 @@ public class BasePage {
         return wait.until(ExpectedConditions.textToBePresentInElementLocated(element, text));
     }
 
+    public boolean waitForTextMatches(By element, String text) {
+        return wait.until(ExpectedConditions.textToBe(element, text));
+    }
+
     public void waitForTitleToContain(String title) {
         wait.until(ExpectedConditions.titleContains(title));
     }

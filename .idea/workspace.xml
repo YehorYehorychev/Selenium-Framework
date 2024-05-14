@@ -37,8 +37,8 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
