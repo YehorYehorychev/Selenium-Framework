@@ -14,11 +14,11 @@ public class CartPage extends BasePage {
     }
 
     public String getProductName() {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(productName)).getText();
+        return waitForElementToBeVisible(productName).getText();
     }
 
     public CheckoutPage checkout() {
-        wait.until(ExpectedConditions.elementToBeClickable(checkoutButton)).click();
+        waitForElementToBeClickable(checkoutButton).click();
         return new CheckoutPage(driver);
     }
 }

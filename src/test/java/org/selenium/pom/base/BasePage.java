@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 import java.util.List;
 
@@ -33,5 +34,53 @@ public class BasePage {
         } else {
             System.out.println("OVERLAYS NOT FOUND");
         }
+    }
+
+    public WebElement waitForElementToBeVisible(By element) {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+    }
+
+    public WebElement waitForElementToBeClickable(By element) {
+        return wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    public WebElement waitForElementToBePresent(By element) {
+        return wait.until(ExpectedConditions.presenceOfElementLocated(element));
+    }
+
+    public boolean waitForTextToBePresentInElement(By element, String text) {
+        return wait.until(ExpectedConditions.textToBePresentInElementLocated(element, text));
+    }
+
+    public void waitForTitleToContain(String title) {
+        wait.until(ExpectedConditions.titleContains(title));
+    }
+
+    public void waitForUrlToBe(String url) {
+        wait.until(ExpectedConditions.urlToBe(url));
+    }
+
+    public void waitForUrlToContain(String partialUrl) {
+        wait.until(ExpectedConditions.urlContains(partialUrl));
+    }
+
+    public boolean waitForElementToDisappear(By element) {
+        return wait.until(ExpectedConditions.invisibilityOfElementLocated(element));
+    }
+
+    public void waitForAlert() {
+        wait.until(ExpectedConditions.alertIsPresent());
+    }
+
+    public void waitForAttributeToBe(By element, String attribute, String value) {
+        wait.until(ExpectedConditions.attributeToBe(element, attribute, value));
+    }
+
+    public boolean waitForAttributeToContain(By element, String attribute, String value) {
+        return wait.until(ExpectedConditions.attributeContains(element, attribute, value));
+    }
+
+    public void waitForFrameToBeAvailableAndSwitchToIt(By frameLocator) {
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameLocator));
     }
 }
