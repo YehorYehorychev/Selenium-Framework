@@ -16,7 +16,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void startDriver() {
-        driver = new DriverManager().intializeDriver();
+        driver = new DriverManager().initializeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 

@@ -13,11 +13,12 @@ public class HomePage extends BasePage {
 
     public HomePage load() {
         load("/");
+//        waitForTitleToContain("AskOmDch");
         return this;
     }
 
     public StorePage navigateToStoreUsingMenu() {
-        driver.findElement(storeMenuLink).click();
+        waitForElementToBeClickable(storeMenuLink).click();
         return new StorePage(driver);
     }
 }
