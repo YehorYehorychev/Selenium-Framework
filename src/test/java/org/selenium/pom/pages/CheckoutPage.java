@@ -83,11 +83,7 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage placeOrder() {
-        List<WebElement> overlays = driver.findElements(overlay);
-        if (!overlays.isEmpty()) {
-            new WebDriverWait(driver, Duration.ofSeconds(15)).until(
-                    ExpectedConditions.invisibilityOfAllElements(overlays));
-        }
+        waitForOverlaysToDisappear(overlay);
         driver.findElement(placeOrderButton).click();
         return this;
     }
