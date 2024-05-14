@@ -8,8 +8,7 @@ public class Product {
     private int id;
     private String name;
 
-    public Product() {
-    }
+    public Product() {}
 
     public Product(int id) throws IOException {
         Product[] products = JacksonUtils.deserializeJson("products.json", Product[].class);
