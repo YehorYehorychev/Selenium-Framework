@@ -56,12 +56,12 @@ public class BasePage {
         wait.until(ExpectedConditions.titleContains(title));
     }
 
-    public void waitForUrlToBe(String url) {
-        wait.until(ExpectedConditions.urlToBe(url));
+    public Boolean waitForUrlToBe(String url) {
+        return wait.until(ExpectedConditions.urlToBe(url));
     }
 
-    public void waitForUrlToContain(String partialUrl) {
-        wait.until(ExpectedConditions.urlContains(partialUrl));
+    public Boolean waitForUrlToContain(String partialUrl) {
+        return wait.until(ExpectedConditions.urlContains(partialUrl));
     }
 
     public boolean waitForElementToDisappear(By element) {

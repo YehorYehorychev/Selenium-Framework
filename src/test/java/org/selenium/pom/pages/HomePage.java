@@ -13,6 +13,7 @@ public class HomePage extends BasePage {
 
     public HomePage load() {
         load("/");
+        waitForTitleToContain("AskOmDch");
         return this;
     }
 
