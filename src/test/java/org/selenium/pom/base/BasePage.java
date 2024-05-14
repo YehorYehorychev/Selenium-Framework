@@ -10,11 +10,13 @@ import java.util.List;
 
 public class BasePage {
     protected WebDriver driver;
-    protected WebDriverWait wait;
+    protected WebDriverWait waitLong;
+    protected WebDriverWait waitShort;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        waitLong = new WebDriverWait(driver, Duration.ofSeconds(15));
+        waitShort = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
     public void load(String endPoint) {
@@ -24,7 +26,7 @@ public class BasePage {
     public void waitForOverlaysToDisappear(By overlay) {
         List<WebElement> overlays = driver.findElements(overlay);
         if (!overlays.isEmpty()) {
-            wait.until(ExpectedConditions.invisibilityOfAllElements(overlays));
+            waitLong.until(ExpectedConditions.invisibilityOfAllElements(overlays));
             System.out.println("OVERLAYS ARE INVISIBLE");
         } else {
             System.out.println("OVERLAYS NOT FOUND");
