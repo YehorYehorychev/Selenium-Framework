@@ -2,6 +2,7 @@ package org.selenium.pom.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.selenium.pom.base.BasePage;
 
 public class CartPage extends BasePage {
@@ -13,11 +14,11 @@ public class CartPage extends BasePage {
     }
 
     public String getProductName() {
-        return driver.findElement(productName).getText();
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(productName)).getText();
     }
 
     public CheckoutPage checkout() {
-        driver.findElement(checkoutButton).click();
+        wait.until(ExpectedConditions.elementToBeClickable(checkoutButton)).click();
         return new CheckoutPage(driver);
     }
 }

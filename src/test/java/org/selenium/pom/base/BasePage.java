@@ -12,11 +12,13 @@ public class BasePage {
     protected WebDriver driver;
     protected WebDriverWait waitLong;
     protected WebDriverWait waitShort;
+    protected WebDriverWait wait;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
         waitLong = new WebDriverWait(driver, Duration.ofSeconds(15));
         waitShort = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     public void load(String endPoint) {
