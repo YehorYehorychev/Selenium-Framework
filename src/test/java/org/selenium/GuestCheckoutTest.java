@@ -33,6 +33,7 @@ public class GuestCheckoutTest extends BaseTest {
         CheckoutPage checkoutPage = cartPage.
                 checkout().
                 setBillingAddress(billingAddress).
+                selectDirectBankTransfer().
                 placeOrder();
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
@@ -58,6 +59,7 @@ public class GuestCheckoutTest extends BaseTest {
         checkoutPage.
                 setUserCredentials(userData).
                 setBillingAddress(billingAddress).
+                selectDirectBankTransfer().
                 placeOrder();
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }

@@ -114,6 +114,7 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage clickHereToLoginLink() {
+        waitForPageLoad(driver,10);
         waitForElementToBeClickable(clickHereToLoginLink).click();
         return this;
     }
@@ -139,6 +140,7 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage clickLoginButton() {
+        waitForElementToBeVisible(loginButton);
         waitForElementToBeClickable(loginButton).click();
         return this;
     }
