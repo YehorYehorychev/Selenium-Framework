@@ -3,6 +3,7 @@ package org.selenium.pom.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.selenium.pom.base.BasePage;
 import org.selenium.pom.objects.BillingAddress;
 import org.selenium.pom.objects.UserData;
@@ -24,6 +25,7 @@ public class CheckoutPage extends BasePage {
     private final By passwordFiled = By.cssSelector("#password");
     private final By loginButton = By.cssSelector("button[value='Login']");
     private final By overlay = By.cssSelector(".blockUI,blockOverlay");
+    private final By countryDropDown = By.id("billing_country");
 
     public CheckoutPage(WebDriver driver) {
         super(driver);
@@ -40,6 +42,12 @@ public class CheckoutPage extends BasePage {
         WebElement lastNameElement = waitForElementToBeVisible(lastNameField);
         lastNameElement.clear();
         lastNameElement.sendKeys(lastName);
+        return this;
+    }
+
+    public CheckoutPage selectCountry(String countryname) {
+        Select select = new Select(waitForElementToBeVisible(countryDropDown));
+        select.selectByVisibleText(countryname);
         return this;
     }
 
