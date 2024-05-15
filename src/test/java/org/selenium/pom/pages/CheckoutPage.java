@@ -3,6 +3,7 @@ package org.selenium.pom.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.selenium.pom.base.BasePage;
 import org.selenium.pom.objects.BillingAddress;
 import org.selenium.pom.objects.UserData;
@@ -24,6 +25,9 @@ public class CheckoutPage extends BasePage {
     private final By passwordFiled = By.cssSelector("#password");
     private final By loginButton = By.cssSelector("button[value='Login']");
     private final By overlay = By.cssSelector(".blockUI,blockOverlay");
+    private final By countryDropDown = By.id("billing_country");
+    private final By stateDropDown = By.id("billing_state");
+    private final By directBankTransferRadioButton = By.id("payment_method_bacs");
 
     public CheckoutPage(WebDriver driver) {
         super(driver);
@@ -40,6 +44,18 @@ public class CheckoutPage extends BasePage {
         WebElement lastNameElement = waitForElementToBeVisible(lastNameField);
         lastNameElement.clear();
         lastNameElement.sendKeys(lastName);
+        return this;
+    }
+
+    public CheckoutPage selectCountry(String countryName) {
+        Select select = new Select(waitForElementToBeVisible(countryDropDown));
+        select.selectByVisibleText(countryName);
+        return this;
+    }
+
+    public CheckoutPage selectState(String stateName) {
+        Select select = new Select(waitForElementToBeVisible(stateDropDown));
+        select.selectByVisibleText(stateName);
         return this;
     }
 
@@ -74,6 +90,8 @@ public class CheckoutPage extends BasePage {
     public CheckoutPage setBillingAddress(BillingAddress billingAddress) {
         return enterFirstName(billingAddress.getFirstName()).
                 enterLastName(billingAddress.getLastName()).
+                selectCountry(billingAddress.getCountry()).
+                selectState(billingAddress.getState()).
                 enterAddressLineOne(billingAddress.getAddressLineOne()).
                 enterCity(billingAddress.getCity()).
                 enterPostCode(billingAddress.getPostalCode()).
@@ -96,6 +114,7 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage clickHereToLoginLink() {
+        waitForPageLoad(driver,10);
         waitForElementToBeClickable(clickHereToLoginLink).click();
         return this;
     }
@@ -121,6 +140,7 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage clickLoginButton() {
+        waitForElementToBeVisible(loginButton);
         waitForElementToBeClickable(loginButton).click();
         return this;
     }
@@ -130,5 +150,12 @@ public class CheckoutPage extends BasePage {
         enterPassword(password);
         clickLoginButton();
         return this;
+    }
+
+    public CheckoutPage selectDirectBankTransfer() {
+        WebElement radioButton = waitForElementToBeClickable(directBankTransferRadioButton);
+        if (!radioButton.isSelected()) {
+            radioButton.click();
+        } return this;
     }
 }

@@ -1,8 +1,10 @@
 package org.selenium.pom.base;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -86,5 +88,12 @@ public class BasePage {
 
     public void waitForFrameToBeAvailableAndSwitchToIt(By frameLocator) {
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameLocator));
+    }
+
+    public static void waitForPageLoad(WebDriver driver, int timeoutInSeconds) {
+        ExpectedCondition<Boolean> pageLoadCondition = driver1 -> {
+            assert driver1 != null;
+            return ((JavascriptExecutor) driver1).executeScript("return document.readyState").equals("complete");
+        };
     }
 }

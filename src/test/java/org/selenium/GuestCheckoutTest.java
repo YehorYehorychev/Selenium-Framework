@@ -26,7 +26,6 @@ public class GuestCheckoutTest extends BaseTest {
                 navigateToStoreUsingMenu().
                 search(searchFor);
         Assert.assertEquals(storePage.getTitle(), "Search results: “" + searchFor + "”");
-
         storePage.clickAddToCartButton(product.getName());
         CartPage cartPage = storePage.clickViewCart();
         Assert.assertEquals(cartPage.getProductName(), product.getName());
@@ -34,6 +33,7 @@ public class GuestCheckoutTest extends BaseTest {
         CheckoutPage checkoutPage = cartPage.
                 checkout().
                 setBillingAddress(billingAddress).
+                selectDirectBankTransfer().
                 placeOrder();
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
@@ -50,17 +50,16 @@ public class GuestCheckoutTest extends BaseTest {
                 navigateToStoreUsingMenu().
                 search(searchFor);
         Assert.assertEquals(storePage.getTitle(), "Search results: “" + searchFor + "”");
-
         storePage.clickAddToCartButton(product.getName());
         CartPage cartPage = storePage.clickViewCart();
         Assert.assertEquals(cartPage.getProductName(), product.getName());
 
         CheckoutPage checkoutPage = cartPage.checkout();
         checkoutPage.clickHereToLoginLink();
-
         checkoutPage.
                 setUserCredentials(userData).
                 setBillingAddress(billingAddress).
+                selectDirectBankTransfer().
                 placeOrder();
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
