@@ -36,7 +36,7 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +99,7 @@
       <recent name="org.selenium.pom.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer">
+  <component name="RunManager" selected="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer">
     <configuration name="GuestCheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <extension name="coverage">
@@ -191,8 +191,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer" />
         <item itemvalue="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer" />
+        <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer" />
         <item itemvalue="TestNG.GuestCheckoutTest" />
         <item itemvalue="TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer" />
         <item itemvalue="TestNG.MyFirstTestCase.dummyTest" />
