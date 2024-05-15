@@ -1,6 +1,8 @@
 {
   "firstName": "Demo",
   "lastName": "QA",
+  "country": "United States (US)",
+  "state": "California",
   "addressLineOne": "San Francisco",
   "city": "San Francisco",
   "postalCode": 94040,
