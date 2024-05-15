@@ -26,6 +26,7 @@ public class CheckoutPage extends BasePage {
     private final By loginButton = By.cssSelector("button[value='Login']");
     private final By overlay = By.cssSelector(".blockUI,blockOverlay");
     private final By countryDropDown = By.id("billing_country");
+    private final By stateDropDown = By.id("billing_state");
 
     public CheckoutPage(WebDriver driver) {
         super(driver);
@@ -45,9 +46,15 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
-    public CheckoutPage selectCountry(String countryname) {
+    public CheckoutPage selectCountry(String countryName) {
         Select select = new Select(waitForElementToBeVisible(countryDropDown));
-        select.selectByVisibleText(countryname);
+        select.selectByVisibleText(countryName);
+        return this;
+    }
+
+    public CheckoutPage selectState(String stateName) {
+        Select select = new Select(waitForElementToBeVisible(stateDropDown));
+        select.selectByVisibleText(stateName);
         return this;
     }
 
