@@ -27,9 +27,9 @@ public class StorePage extends BasePage {
     }
 
     public StorePage enterTextInSearchField(String product) {
-        WebElement searchFieldElement = waitForElementToBeVisible(searchField);
-        searchFieldElement.clear();
-        searchFieldElement.sendKeys(product);
+        waitForElementToBeVisible(searchField);
+        searchField.clear();
+        searchField.sendKeys(product);
         return this;
     }
 
