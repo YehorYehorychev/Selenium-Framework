@@ -44,6 +44,9 @@ public class CheckoutPage extends BasePage {
     @FindBy(css = ".showlogin")
     private WebElement clickHereToLoginLink;
 
+    @FindBy(xpath = "//a[text()='Lost your password?']")
+    private WebElement lostYourPasswordButton;
+
     @FindBy(css = "#username")
     private WebElement usernameFiled;
 
@@ -150,9 +153,8 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage clickHereToLoginLink() {
-        waitForPageLoad(driver, 10);
-        waitForElementToBePresent(clickHereToLoginLink);
         waitForElementToBeClickable(clickHereToLoginLink).click();
+        waitForElementToBeClickable(lostYourPasswordButton);
         return this;
     }
 
