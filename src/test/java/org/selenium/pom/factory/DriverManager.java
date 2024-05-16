@@ -3,6 +3,7 @@ package org.selenium.pom.factory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
@@ -19,6 +20,10 @@ public class DriverManager {
             case "Firefox" -> {
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
+            }
+            case "Edge" -> {
+                WebDriverManager.edgedriver().setup();
+                driver = new EdgeDriver();
             }
             default -> throw new IllegalStateException("Invalid browser name: " + browser);
         }
