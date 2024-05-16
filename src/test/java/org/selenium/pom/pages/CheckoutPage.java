@@ -1,49 +1,86 @@
 package org.selenium.pom.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.selenium.pom.base.BasePage;
 import org.selenium.pom.objects.BillingAddress;
 import org.selenium.pom.objects.UserData;
 
+import java.util.List;
+
 
 public class CheckoutPage extends BasePage {
-    private final By firstNameField = By.cssSelector("#billing_first_name");
-    private final By lastNameField = By.cssSelector("#billing_last_name");
-    private final By addressLineOneField = By.cssSelector("#billing_address_1");
-    private final By billingCityField = By.cssSelector("#billing_city");
-    private final By billingCompanyField = By.cssSelector("#billing_company");
-    private final By billingPostCodeField = By.cssSelector("#billing_postcode");
-    private final By billingEmailField = By.cssSelector("#billing_email");
-    private final By placeOrderButton = By.cssSelector("#place_order");
-    private final By successNotice = By.cssSelector(".woocommerce-notice");
 
-    private final By clickHereToLoginLink = By.cssSelector(".showlogin");
-    private final By usernameFiled = By.cssSelector("#username");
-    private final By passwordFiled = By.cssSelector("#password");
-    private final By loginButton = By.cssSelector("button[value='Login']");
-    private final By overlay = By.cssSelector(".blockUI,blockOverlay");
-    private final By countryDropDown = By.id("billing_country");
-    private final By stateDropDown = By.id("billing_state");
-    private final By directBankTransferRadioButton = By.id("payment_method_bacs");
+    @FindBy(css = "#billing_first_name")
+    private WebElement firstNameField;
+
+    @FindBy(css = "#billing_last_name")
+    private WebElement lastNameField;
+
+    @FindBy(css = "#billing_address_1")
+    private WebElement addressLineOneField;
+
+    @FindBy(css = "#billing_city")
+    private WebElement billingCityField;
+
+    @FindBy(css = "#billing_company")
+    private WebElement billingCompanyField;
+
+    @FindBy(css = "#billing_postcode")
+    private WebElement billingPostCodeField;
+
+    @FindBy(css = "#billing_email")
+    private WebElement billingEmailField;
+
+    @FindBy(css = "#place_order")
+    private WebElement placeOrderButton;
+
+    @FindBy(css = ".woocommerce-notice")
+    private WebElement successNotice;
+
+    @FindBy(css = ".showlogin")
+    private WebElement clickHereToLoginLink;
+
+    @FindBy(css = "#username")
+    private WebElement usernameFiled;
+
+    @FindBy(css = "#password")
+    private WebElement passwordFiled;
+
+    @FindBy(css = ".blockUI.blockOverlay")
+    private List<WebElement> overlay;
+
+    @FindBy(id = "billing_country")
+    private WebElement countryDropDown;
+
+    @FindBy(id = "billing_state")
+    private WebElement stateDropDown;
+
+    @FindBy(id = "payment_method_bacs")
+    private WebElement directBankTransferRadioButton;
+
+    @FindBy(css = "button[value='Login']")
+    private WebElement loginButton;
 
     public CheckoutPage(WebDriver driver) {
         super(driver);
+        PageFactory.initElements(driver, this);
     }
 
     public CheckoutPage enterFirstName(String firstName) {
-        WebElement firstNameElement = waitForElementToBeVisible(firstNameField);
-        firstNameElement.clear();
-        firstNameElement.sendKeys(firstName);
+        waitForElementToBeVisible(firstNameField);
+        firstNameField.clear();
+        firstNameField.sendKeys(firstName);
         return this;
     }
 
     public CheckoutPage enterLastName(String lastName) {
-        WebElement lastNameElement = waitForElementToBeVisible(lastNameField);
-        lastNameElement.clear();
-        lastNameElement.sendKeys(lastName);
+        waitForElementToBeVisible(lastNameField);
+        lastNameField.clear();
+        lastNameField.sendKeys(lastName);
         return this;
     }
 
@@ -60,42 +97,42 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage enterAddressLineOne(String addressLineOne) {
-        WebElement addressLineOneElement = waitForElementToBeVisible(addressLineOneField);
-        addressLineOneElement.clear();
-        addressLineOneElement.sendKeys(addressLineOne);
+        waitForElementToBeVisible(addressLineOneField);
+        addressLineOneField.clear();
+        addressLineOneField.sendKeys(addressLineOne);
         return this;
     }
 
     public CheckoutPage enterCity(String city) {
-        WebElement cityElement = waitForElementToBeVisible(billingCityField);
-        cityElement.clear();
-        cityElement.sendKeys(city);
+        waitForElementToBeVisible(billingCityField);
+        billingCityField.clear();
+        billingCityField.sendKeys(city);
         return this;
     }
 
     public CheckoutPage enterPostCode(String postCode) {
-        WebElement postCodeElement = waitForElementToBeVisible(billingPostCodeField);
-        postCodeElement.clear();
-        postCodeElement.sendKeys(postCode);
+        waitForElementToBeVisible(billingPostCodeField);
+        billingPostCodeField.clear();
+        billingPostCodeField.sendKeys(postCode);
         return this;
     }
 
     public CheckoutPage enterEmail(String email) {
-        WebElement emailElement = waitForElementToBeVisible(billingEmailField);
-        emailElement.clear();
-        emailElement.sendKeys(email);
+        waitForElementToBeVisible(billingEmailField);
+        billingEmailField.clear();
+        billingEmailField.sendKeys(email);
         return this;
     }
 
     public CheckoutPage setBillingAddress(BillingAddress billingAddress) {
-        return enterFirstName(billingAddress.getFirstName()).
-                enterLastName(billingAddress.getLastName()).
-                selectCountry(billingAddress.getCountry()).
-                selectState(billingAddress.getState()).
-                enterAddressLineOne(billingAddress.getAddressLineOne()).
-                enterCity(billingAddress.getCity()).
-                enterPostCode(billingAddress.getPostalCode()).
-                enterEmail(billingAddress.getEmail());
+        return enterFirstName(billingAddress.getFirstName())
+                .enterLastName(billingAddress.getLastName())
+                .selectCountry(billingAddress.getCountry())
+                .selectState(billingAddress.getState())
+                .enterAddressLineOne(billingAddress.getAddressLineOne())
+                .enterCity(billingAddress.getCity())
+                .enterPostCode(billingAddress.getPostalCode())
+                .enterEmail(billingAddress.getEmail());
     }
 
     public CheckoutPage setUserCredentials(UserData userData) {
@@ -105,7 +142,6 @@ public class CheckoutPage extends BasePage {
     public CheckoutPage placeOrder() {
         waitForOverlaysToDisappear(overlay);
         waitForElementToBeClickable(placeOrderButton).click();
-//        driver.findElement(placeOrderButton).click();
         return this;
     }
 
@@ -114,23 +150,23 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage clickHereToLoginLink() {
-        waitForPageLoad(driver,10);
+        waitForPageLoad(driver, 10);
         waitForElementToBePresent(clickHereToLoginLink);
         waitForElementToBeClickable(clickHereToLoginLink).click();
         return this;
     }
 
     public CheckoutPage enterUserName(String username) {
-        WebElement usernameElement = waitForElementToBeClickable(usernameFiled);
-        usernameElement.clear();
-        usernameElement.sendKeys(username);
+        waitForElementToBeClickable(usernameFiled);
+        usernameFiled.clear();
+        usernameFiled.sendKeys(username);
         return this;
     }
 
     public CheckoutPage enterPassword(String password) {
-        WebElement passwordElement = waitForElementToBeClickable(passwordFiled);
-        passwordElement.clear();
-        passwordElement.sendKeys(password);
+        waitForElementToBeClickable(passwordFiled);
+        passwordFiled.clear();
+        passwordFiled.sendKeys(password);
         return this;
     }
 
@@ -154,9 +190,10 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage selectDirectBankTransfer() {
-        WebElement radioButton = waitForElementToBeClickable(directBankTransferRadioButton);
-        if (!radioButton.isSelected()) {
-            radioButton.click();
-        } return this;
+        waitForElementToBeClickable(directBankTransferRadioButton);
+        if (!directBankTransferRadioButton.isSelected()) {
+            directBankTransferRadioButton.click();
+        }
+        return this;
     }
 }

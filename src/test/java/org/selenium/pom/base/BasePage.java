@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,14 +23,14 @@ public class BasePage {
         waitLong = new WebDriverWait(driver, Duration.ofSeconds(15));
         waitShort = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        PageFactory.initElements(driver, this);
     }
 
     public void load(String endPoint) {
         driver.get("https://askomdch.com" + endPoint);
     }
 
-    public void waitForOverlaysToDisappear(By overlay) {
-        List<WebElement> overlays = driver.findElements(overlay);
+    public void waitForOverlaysToDisappear(List<WebElement> overlays) {
         if (!overlays.isEmpty()) {
             waitLong.until(ExpectedConditions.invisibilityOfAllElements(overlays));
             System.out.println("OVERLAYS ARE INVISIBLE");
@@ -38,20 +39,24 @@ public class BasePage {
         }
     }
 
-    public WebElement waitForElementToBeVisible(By element) {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+    public WebElement waitForElementToBeVisible(WebElement element) {
+        return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public WebElement waitForElementToBeClickable(By element) {
+    public WebElement waitForElementToBeClickable(WebElement element) {
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public WebElement waitForElementToBePresent(By element) {
-        return wait.until(ExpectedConditions.presenceOfElementLocated(element));
+    public WebElement waitForElementToBeClickableUsingBy(By element) {
+        return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public boolean waitForTextToBePresentInElement(By element, String text) {
-        return wait.until(ExpectedConditions.textToBePresentInElementLocated(element, text));
+    public WebElement waitForElementToBePresent(WebElement element) {
+        return wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    public boolean waitForTextToBePresentInElement(WebElement element, String text) {
+        return wait.until(ExpectedConditions.textToBePresentInElement(element, text));
     }
 
     public boolean waitForTextMatches(By element, String text) {
@@ -70,24 +75,24 @@ public class BasePage {
         return wait.until(ExpectedConditions.urlContains(partialUrl));
     }
 
-    public boolean waitForElementToDisappear(By element) {
-        return wait.until(ExpectedConditions.invisibilityOfElementLocated(element));
+    public boolean waitForElementToDisappear(WebElement element) {
+        return wait.until(ExpectedConditions.invisibilityOf(element));
     }
 
     public void waitForAlert() {
         wait.until(ExpectedConditions.alertIsPresent());
     }
 
-    public void waitForAttributeToBe(By element, String attribute, String value) {
+    public void waitForAttributeToBe(WebElement element, String attribute, String value) {
         wait.until(ExpectedConditions.attributeToBe(element, attribute, value));
     }
 
-    public boolean waitForAttributeToContain(By element, String attribute, String value) {
+    public boolean waitForAttributeToContain(WebElement element, String attribute, String value) {
         return wait.until(ExpectedConditions.attributeContains(element, attribute, value));
     }
 
-    public void waitForFrameToBeAvailableAndSwitchToIt(By frameLocator) {
-        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameLocator));
+    public void waitForFrameToBeAvailableAndSwitchToIt(WebElement frameElement) {
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameElement));
     }
 
     public static void waitForPageLoad(WebDriver driver, int timeoutInSeconds) {
@@ -95,5 +100,6 @@ public class BasePage {
             assert driver1 != null;
             return ((JavascriptExecutor) driver1).executeScript("return document.readyState").equals("complete");
         };
+        new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds)).until(pageLoadCondition);
     }
 }
