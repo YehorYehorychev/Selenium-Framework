@@ -91,6 +91,13 @@ public class CheckoutPage extends BasePage {
         Select select = new Select(waitForElementToBeVisible(countryDropDown));
         select.selectByVisibleText(countryName);
         return this;
+        /*
+         * If an element in the DOM is not immediately visible,
+         * and you need to scroll for it to appear in the DOM of the page, use this ->
+         * WebElement e = waitForElementToBeClickable(By.Xpath("Xpath"));
+         * ((JavaScriptExecutor) driver). executeScript("arguments[0].scrollIntoView(true);", e);
+         * e.click();
+         */
     }
 
     public CheckoutPage selectState(String stateName) {
