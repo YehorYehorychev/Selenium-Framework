@@ -5,23 +5,26 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.selenium.pom.constants.DriverType;
+
+import static org.selenium.pom.constants.DriverType.*;
 
 
 public class DriverManager {
-
+    // To run your tests in specific browser run -> mvn clean test -Dbrowser=CHROME
     public WebDriver initializeDriver() {
         WebDriver driver;
         String browser = System.getProperty("browser");
-        switch (browser) {
-            case "Chrome" -> {
+        switch (DriverType.valueOf(browser)) {
+            case CHROME -> {
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
             }
-            case "Firefox" -> {
+            case FIREFOX -> {
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
             }
-            case "Edge" -> {
+            case EDGE -> {
                 WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
             }
