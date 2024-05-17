@@ -17,7 +17,7 @@ public class DriverManager {
         If you prefer to run your tests directly from the IDE instead of using "mvn clean test",
         you need to set the system property as follows ->
 
-        For example: localBrowser = System.getProperty("browser");
+        For example: browser = System.getProperty("browser", browser);
 
         String localBrowser = System.getProperty("browser"); -> Run tests using mvn clean test -Dbrowser=CHROME
         String localBrowser = browser; -> Run tests using XML file
