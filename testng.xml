@@ -2,8 +2,11 @@
 
 <suite name="Suite1" verbose="1">
     <test name="Regression1">
-        <packages>
+<!--        <packages>
             <package name="org.selenium.pom.tests"/>
-        </packages>
+        </packages>-->
+        <classes>
+            <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
+        </classes>
     </test>
 </suite>
