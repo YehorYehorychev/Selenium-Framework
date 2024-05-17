@@ -84,6 +84,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.GuestCheckoutTest.executor": "Run",
+    "TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (1).executor": "Run",
     "TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer.executor": "Run",
     "TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer.executor": "Run",
     "TestNG.MyFirstTestCase.dummyTest.executor": "Run",
@@ -101,7 +102,7 @@
       <recent name="org.selenium.pom.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer">
+  <component name="RunManager" selected="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (1)">
     <configuration name="GuestCheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <extension name="coverage">
@@ -119,18 +120,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.selenium.pom.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.selenium" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
       <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.GuestCheckoutTest" />
       <option name="METHOD_NAME" value="guestCheckoutUsingDirectBankTransfer" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MasterSeleniumFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.selenium.pom.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.GuestCheckoutTest" />
+      <option name="METHOD_NAME" value="guestCheckoutUsingDirectBankTransfer" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -155,18 +195,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyFirstTestCase.dummyTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MasterSeleniumFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.selenium.pom.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.selenium" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.MyFirstTestCase" />
-      <option name="METHOD_NAME" value="dummyTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+    <configuration default="true" type="TestNG">
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -191,13 +234,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (1)" />
+      <item itemvalue="TestNG.GuestCheckoutTest" />
+      <item itemvalue="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer" />
+      <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer" />
+      <item itemvalue="TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer" />
+        <item itemvalue="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (1)" />
         <item itemvalue="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer" />
+        <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer" />
         <item itemvalue="TestNG.GuestCheckoutTest" />
         <item itemvalue="TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer" />
-        <item itemvalue="TestNG.MyFirstTestCase.dummyTest" />
       </list>
     </recent_temporary>
   </component>
