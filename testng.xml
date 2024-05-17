@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" verbose="1">
+    <test name="Firefox">
+<!--        <packages>
+            <package name="org.selenium.pom.tests"/>
+        </packages>-->
+<!--        In your IDE -> Run tab -> Edit Configurations -> Edit Configuration templates -> and REMOVE: -Dbrowser=CHROME
+        to run tests using XML file or ADD: ea -Dbrowser=CHROME to run tests through IDE-->
+        <parameter name="browser" value="FIREFOX"/>
+<!--        <parameter name="browser" value="CHROME"/>-->
+<!--        <parameter name="browser" value="EDGE"/>-->
+        <classes>
+            <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
+        </classes>
+    </test>
+    <test name="Chrome">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
+        </classes>
+    </test>
+    <test name="Edge">
+        <parameter name="browser" value="EDGE"/>
+        <classes>
+            <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
+        </classes>
+    </test>
+</suite>
