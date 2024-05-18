@@ -19,7 +19,7 @@ public class DriverManager {
 
         For example: browser = System.getProperty("browser", browser);
 
-        String localBrowser = System.getProperty("browser"); -> Run tests using mvn clean test -Dbrowser=CHROME
+        String localBrowser = System.getProperty("browser"); -> Run tests using mvn clean test -Dbrowser=CHROME OR mvn clean test
         String localBrowser = browser; -> Run tests using XML file
     */
     public WebDriver initializeDriver(String browser) {
