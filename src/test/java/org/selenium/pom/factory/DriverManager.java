@@ -20,7 +20,7 @@ public class DriverManager {
         For example: browser = System.getProperty("browser", browser);
 
         Run tests using MAVEN -> mvn clean test -Dbrowser=CHROME
-        OR mvn clean test OR mvn clean test "-Dsurefire.suiteXmlFiles=testng.xml"
+        OR mvn clean test OR mvn clean test "-DsuiteFile=testng.xml"
     */
     public WebDriver initializeDriver(String browser) {
         WebDriver driver;
