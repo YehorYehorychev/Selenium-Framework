@@ -19,8 +19,8 @@ public class DriverManager {
 
         For example: browser = System.getProperty("browser", browser);
 
-        String localBrowser = System.getProperty("browser"); -> Run tests using mvn clean test -Dbrowser=CHROME OR mvn clean test
-        String localBrowser = browser; -> Run tests using XML file
+        Run tests using MAVEN -> mvn clean test -Dbrowser=CHROME
+        OR mvn clean test OR mvn clean test "-Dsurefire.suiteXmlFiles=testng.xml"
     */
     public WebDriver initializeDriver(String browser) {
         WebDriver driver;
