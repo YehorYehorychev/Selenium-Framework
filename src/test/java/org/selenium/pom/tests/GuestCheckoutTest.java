@@ -21,7 +21,7 @@ public class GuestCheckoutTest extends BaseTest {
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
         Product product = new Product(1215);
 
-        StorePage storePage = new HomePage(driver).
+        StorePage storePage = new HomePage(getDriver()).
                 load().
                 navigateToStoreUsingMenu().
                 search(searchFor);
@@ -45,7 +45,7 @@ public class GuestCheckoutTest extends BaseTest {
         UserData userData = JacksonUtils.deserializeJson("userCredentials.json", UserData.class);
         Product product = new Product(1215);
 
-        StorePage storePage = new HomePage(driver).
+        StorePage storePage = new HomePage(getDriver()).
                 load().
                 navigateToStoreUsingMenu().
                 search(searchFor);

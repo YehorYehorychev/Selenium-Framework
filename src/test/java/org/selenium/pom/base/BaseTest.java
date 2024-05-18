@@ -18,11 +18,13 @@ public class BaseTest {
     @BeforeMethod
     public void startDriver(String browser) {
         setDriver(new DriverManager().initializeDriver(browser));
+        System.out.println("Current Thread: " + Thread.currentThread().getId() + ", " + "DRIVER = " + getDriver());
     }
 
     @AfterMethod
     public void quitDriver() {
         getDriver().quit();
+        System.out.println("Current Thread: " + Thread.currentThread().getId() + ", " + "DRIVER = " + getDriver());
     }
 
     @AfterClass
@@ -30,11 +32,11 @@ public class BaseTest {
         WebDriverManager.chromedriver().clearDriverCache();
     }
 
-    public WebDriver getDriver() {
+    protected WebDriver getDriver() {
         return this.driver.get();
     }
 
-    public void setDriver(WebDriver driver) {
+    private void setDriver(WebDriver driver) {
         this.driver.set(driver);
     }
 }
