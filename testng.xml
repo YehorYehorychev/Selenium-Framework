@@ -6,10 +6,8 @@
             <package name="org.selenium.pom.tests"/>
         </packages>-->
 <!--        In your IDE -> Run tab -> Edit Configurations -> Edit Configuration templates -> and REMOVE: -Dbrowser=CHROME
-        to run tests using XML file or ADD: ea -Dbrowser=CHROME to run tests through IDE-->
+        to run tests using XML file or ADD: -ea -Dbrowser=CHROME to run tests through IDE-->
         <parameter name="browser" value="FIREFOX"/>
-<!--        <parameter name="browser" value="CHROME"/>-->
-<!--        <parameter name="browser" value="EDGE"/>-->
         <classes>
             <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
         </classes>

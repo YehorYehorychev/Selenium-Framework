@@ -162,6 +162,7 @@ public class CheckoutPage extends BasePage {
     public CheckoutPage clickHereToLoginLink() {
         waitForElementToBeClickable(clickHereToLoginLink).click();
         waitForElementToBeClickable(lostYourPasswordButton);
+        waitForElementToBeVisible(lostYourPasswordButton);
         return this;
     }
 
