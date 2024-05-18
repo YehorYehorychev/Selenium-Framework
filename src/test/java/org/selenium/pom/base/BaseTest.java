@@ -12,22 +12,29 @@ import org.testng.annotations.Parameters;
 import java.time.Duration;
 
 public class BaseTest {
-    protected WebDriver driver;
-    protected WebDriverWait wait;
+    private ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
     @Parameters("browser")
     @BeforeMethod
     public void startDriver(String browser) {
-        driver = new DriverManager().initializeDriver(browser);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        setDriver(new DriverManager().initializeDriver(browser));
     }
 
     @AfterMethod
     public void quitDriver() {
-        driver.quit();
+        getDriver().quit();
     }
 
     @AfterClass
     public void tearDownClass() {
         WebDriverManager.chromedriver().clearDriverCache();
+    }
+
+    public WebDriver getDriver() {
+        return this.driver.get();
+    }
+
+    public void setDriver(WebDriver driver) {
+        this.driver.set(driver);
     }
 }
