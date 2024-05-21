@@ -3,7 +3,7 @@
 <!--        In your IDE -> Run tab -> Edit Configurations -> Edit Configuration templates -> and REMOVE: -Dbrowser=CHROME
         to run tests using XML file or ADD: -ea -Dbrowser=CHROME to run tests through IDE-->
 
-<suite name="Suite1" verbose="1" parallel="methods">
+<suite name="Suite1" verbose="1">
     <test name="Firefox" parallel="methods">
         <parameter name="browser" value="FIREFOX"/>
         <classes>
