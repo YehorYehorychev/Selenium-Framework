@@ -3,20 +3,20 @@
 <!--        In your IDE -> Run tab -> Edit Configurations -> Edit Configuration templates -> and REMOVE: -Dbrowser=CHROME
         to run tests using XML file or ADD: -ea -Dbrowser=CHROME to run tests through IDE-->
 
-<suite name="Suite1" verbose="1">
-    <test name="Firefox">
+<suite name="Suite1" verbose="1" parallel="methods">
+    <test name="Firefox" parallel="methods">
         <parameter name="browser" value="FIREFOX"/>
         <classes>
             <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
         </classes>
     </test>
-    <test name="Chrome">
+    <test name="Chrome" parallel="methods">
         <parameter name="browser" value="CHROME"/>
         <classes>
             <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
         </classes>
     </test>
-    <test name="Edge">
+    <test name="Edge" parallel="methods">
         <parameter name="browser" value="EDGE"/>
         <classes>
             <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
