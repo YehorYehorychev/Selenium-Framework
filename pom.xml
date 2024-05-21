@@ -22,8 +22,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-                    <parallel>suites</parallel>
-<!--                    <threadCount>2</threadCount>-->
+                    <parallel>methods</parallel>
+                    <threadCount>2</threadCount>
                     <!--<suiteXmlFiles>
                         <suiteXmlFile>${suiteFile}</suiteXmlFile>
                     </suiteXmlFiles>-->
@@ -43,7 +43,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.10.2</version>
+            <version>7.7.0</version>
             <scope>compile</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->

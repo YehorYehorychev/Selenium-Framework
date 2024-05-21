@@ -25,7 +25,6 @@ public class BaseTest {
     @AfterMethod
     public void quitDriver() {
         getDriver().quit();
-        System.out.println("Current Thread: " + Thread.currentThread().getId() + ", " + "DRIVER = " + getDriver());
     }
 
     @AfterClass
