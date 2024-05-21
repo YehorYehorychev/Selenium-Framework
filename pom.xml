@@ -22,8 +22,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-                    <parallel>methods</parallel>
-                    <threadCount>2</threadCount>
+                  <!--  <parallel>methods</parallel>
+                    <threadCount>2</threadCount>-->
                     <!--<suiteXmlFiles>
                         <suiteXmlFile>${suiteFile}</suiteXmlFile>
                     </suiteXmlFiles>-->
