@@ -10,7 +10,8 @@ import org.selenium.pom.pages.HomePage;
 import org.selenium.pom.pages.StorePage;
 import org.selenium.pom.utils.JacksonUtils;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.Test;
+
 import java.io.IOException;
 
 public class GuestCheckoutTest extends BaseTest {

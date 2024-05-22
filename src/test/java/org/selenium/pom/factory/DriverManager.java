@@ -7,9 +7,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.selenium.pom.constants.DriverType;
 
-import static org.selenium.pom.constants.DriverType.*;
-
-
 public class DriverManager {
     /*
         To run your tests in specific browser run -> mvn clean test -Dbrowser=CHROME
