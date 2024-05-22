@@ -10,7 +10,7 @@ public class ConfigLoader {
         properties = PropertyUtils.propertyLoader("src/test/resources/config.properties");
     }
 
-    public ConfigLoader getInstance() {
+    public static ConfigLoader getInstance() {
         if (configLoader == null) {
             configLoader = new ConfigLoader();
         }
@@ -22,8 +22,7 @@ public class ConfigLoader {
         if (prop != null) return prop;
         else throw new RuntimeException("Property baseUrl is not specified in the config.properties file");
     }
-
-    public String getLogin() {
+/*    public String getLogin() {
         String prop = properties.getProperty("login");
         if (prop != null) return prop;
         else throw new RuntimeException("Property login is not specified in the config.properties file");
@@ -33,5 +32,5 @@ public class ConfigLoader {
         String prop = properties.getProperty("password");
         if (prop != null) return prop;
         else throw new RuntimeException("Property password is not specified in the config.properties file");
-    }
+    }*/
 }
