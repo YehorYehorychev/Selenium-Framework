@@ -36,6 +36,8 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/GuestCheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/GuestCheckoutTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
@@ -301,10 +303,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml (1)" />
+        <item itemvalue="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer" />
         <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
         <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer (1)" />
         <item itemvalue="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (2)" />
-        <item itemvalue="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (1)" />
       </list>
     </recent_temporary>
   </component>

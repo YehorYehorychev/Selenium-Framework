@@ -1,6 +1,5 @@
 package org.selenium.pom.tests;
 
-import org.junit.Test;
 import org.selenium.pom.base.BaseTest;
 import org.selenium.pom.objects.BillingAddress;
 import org.selenium.pom.objects.Product;
@@ -11,12 +10,12 @@ import org.selenium.pom.pages.HomePage;
 import org.selenium.pom.pages.StorePage;
 import org.selenium.pom.utils.JacksonUtils;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.Test;
+
 import java.io.IOException;
 
 public class GuestCheckoutTest extends BaseTest {
 
-//    @Test
     @Test
     public void guestCheckoutUsingDirectBankTransfer() throws IOException {
         String searchFor = "Blue";
@@ -27,23 +26,19 @@ public class GuestCheckoutTest extends BaseTest {
                 load().
                 navigateToStoreUsingMenu().
                 search(searchFor);
-//        Assert.assertEquals(storePage.getTitle(), "Search results: “" + searchFor + "”");
-        org.junit.Assert.assertEquals("Search results: “" + searchFor + "”", storePage.getTitle());
+        Assert.assertEquals(storePage.getTitle(), "Search results: “" + searchFor + "”");
         storePage.clickAddToCartButton(product.getName());
         CartPage cartPage = storePage.clickViewCart();
-//        Assert.assertEquals(cartPage.getProductName(), product.getName());
-        org.junit.Assert.assertEquals(product.getName(), cartPage.getProductName());
+        Assert.assertEquals(cartPage.getProductName(), product.getName());
 
         CheckoutPage checkoutPage = cartPage.
                 checkout().
                 setBillingAddress(billingAddress).
                 selectDirectBankTransfer().
                 placeOrder();
-//        Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
-        org.junit.Assert.assertEquals("Thank you. Your order has been received.", checkoutPage.getNotice());
+        Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 
-//    @Test
     @Test
     public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws IOException {
         String searchFor = "Blue";
@@ -55,12 +50,10 @@ public class GuestCheckoutTest extends BaseTest {
                 load().
                 navigateToStoreUsingMenu().
                 search(searchFor);
-//        Assert.assertEquals(storePage.getTitle(), "Search results: “" + searchFor + "”");
-        org.junit.Assert.assertEquals("Search results: “" + searchFor + "”", storePage.getTitle());
+        Assert.assertEquals(storePage.getTitle(), "Search results: “" + searchFor + "”");
         storePage.clickAddToCartButton(product.getName());
         CartPage cartPage = storePage.clickViewCart();
-//        Assert.assertEquals(cartPage.getProductName(), product.getName());
-        org.junit.Assert.assertEquals(product.getName(), cartPage.getProductName());
+        Assert.assertEquals(cartPage.getProductName(), product.getName());
 
         CheckoutPage checkoutPage = cartPage.checkout();
         checkoutPage.clickHereToLoginLink();
@@ -69,7 +62,6 @@ public class GuestCheckoutTest extends BaseTest {
                 setBillingAddress(billingAddress).
                 selectDirectBankTransfer().
                 placeOrder();
-//        Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
-        org.junit.Assert.assertEquals("Thank you. Your order has been received.", checkoutPage.getNotice());
+        Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 }
