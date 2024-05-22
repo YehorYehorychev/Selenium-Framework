@@ -40,7 +40,7 @@ public class GuestCheckoutTest extends BaseTest {
                 selectDirectBankTransfer().
                 placeOrder();
 //        Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
-        org.junit.Assert.assertEquals(product.getName(), cartPage.getProductName());
+        org.junit.Assert.assertEquals("Thank you. Your order has been received.", checkoutPage.getNotice());
     }
 
 //    @Test
@@ -70,6 +70,6 @@ public class GuestCheckoutTest extends BaseTest {
                 selectDirectBankTransfer().
                 placeOrder();
 //        Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
-        org.junit.Assert.assertEquals(product.getName(), cartPage.getProductName());
+        org.junit.Assert.assertEquals("Thank you. Your order has been received.", checkoutPage.getNotice());
     }
 }
