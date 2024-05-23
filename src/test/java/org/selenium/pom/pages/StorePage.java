@@ -33,6 +33,11 @@ public class StorePage extends BasePage {
         return this;
     }
 
+    public StorePage load() {
+        load("/store");
+        return this;
+    }
+
     public StorePage search(String product) {
         enterTextInSearchField(product);
         clickSearchButton();
@@ -51,9 +56,10 @@ public class StorePage extends BasePage {
         return By.cssSelector("a[aria-label='Add “" + productName + "” to your cart']");
     }
 
-    public void clickAddToCartButton(String productName) {
+    public StorePage clickAddToCartButton(String productName) {
         By addToCartButton = getAddToCartButtonElement(productName);
         waitForElementToBeClickableUsingBy(addToCartButton).click();
+        return this;
     }
 
     public CartPage clickViewCart() {

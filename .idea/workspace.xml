@@ -36,7 +36,9 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/prod_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/prod_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/StorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/StorePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/AddToCartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,6 +84,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.AddToCart.addToCartFromStorePage.executor": "Run",
+    "TestNG.AddToCartTest.addToCartFromStorePage.executor": "Run",
     "TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml (1).executor": "Run",
     "TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml.executor": "Run",
     "TestNG.GuestCheckoutTest.executor": "Run",
@@ -91,8 +95,10 @@
     "TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer (1).executor": "Run",
     "TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer.executor": "Run",
     "TestNG.MyFirstTestCase.dummyTest.executor": "Run",
+    "TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu.executor": "Run",
+    "TestNG.SearchTest.searchWithPartialMatch.executor": "Run",
     "TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer.executor": "Run",
-    "git-widget-placeholder": "MultipleEnv",
+    "git-widget-placeholder": "E2ETestsFix",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/egory/IdeaProjects/Selenium-Framework/src/test/resources",
     "project.structure.last.edited": "Modules",
@@ -110,7 +116,35 @@
       <recent name="C:\Users\egory\IdeaProjects\Selenium-Framework" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer">
+  <component name="RunManager" selected="TestNG.AddToCartTest.addToCartFromStorePage">
+    <configuration name="AddToCartTest.addToCartFromStorePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MasterSeleniumFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.selenium.pom.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.AddToCartTest" />
+      <option name="METHOD_NAME" value="addToCartFromStorePage" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
@@ -120,86 +154,6 @@
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MasterSeleniumFramework" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MasterSeleniumFramework" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.selenium.pom.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.GuestCheckoutTest" />
-      <option name="METHOD_NAME" value="guestCheckoutUsingDirectBankTransfer" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MasterSeleniumFramework" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.selenium.pom.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.GuestCheckoutTest" />
-      <option name="METHOD_NAME" value="loginToExistingAccountAndCheckoutUsingDirectBankTransfer" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -240,6 +194,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NavigationTest.NavigateFromHomeToStoreUsingMainMenu" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MasterSeleniumFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.selenium.pom.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.NavigationTest" />
+      <option name="METHOD_NAME" value="NavigateFromHomeToStoreUsingMainMenu" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest.searchWithPartialMatch" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MasterSeleniumFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.selenium.pom.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.SearchTest" />
+      <option name="METHOD_NAME" value="searchWithPartialMatch" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -261,19 +271,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer" />
+      <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
+      <item itemvalue="TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu" />
+      <item itemvalue="TestNG.SearchTest.searchWithPartialMatch" />
       <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer" />
       <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml (1)" />
-      <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
-      <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
+        <item itemvalue="TestNG.SearchTest.searchWithPartialMatch" />
+        <item itemvalue="TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu" />
         <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer" />
         <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml (1)" />
-        <item itemvalue="TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer" />
-        <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
-        <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer (1)" />
       </list>
     </recent_temporary>
   </component>
