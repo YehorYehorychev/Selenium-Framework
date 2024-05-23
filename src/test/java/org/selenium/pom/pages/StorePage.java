@@ -33,6 +33,11 @@ public class StorePage extends BasePage {
         return this;
     }
 
+    public StorePage load() {
+        load("/store");
+        return this;
+    }
+
     public StorePage search(String product) {
         enterTextInSearchField(product);
         clickSearchButton();
