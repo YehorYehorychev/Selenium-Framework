@@ -7,6 +7,7 @@ public class ConfigLoader {
     private static ConfigLoader configLoader;
 
     private ConfigLoader() {
+        String env = System.getProperty("env", "STAGING");
         properties = PropertyUtils.propertyLoader("src/test/resources/stg_config.properties");
     }
 
