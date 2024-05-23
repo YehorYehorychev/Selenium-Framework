@@ -18,6 +18,8 @@ public class DriverManager {
 
         Run tests using MAVEN -> mvn clean test -Dbrowser=CHROME
         OR mvn clean test OR mvn clean test "-DsuiteFile=testng.xml"
+        ---------------------------------------------------------------------------------------
+        UPDATE: mvn clean test -Denv=STAGING
     */
     public WebDriver initializeDriver(String browser) {
         WebDriver driver;
