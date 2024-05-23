@@ -7,8 +7,15 @@ public class ConfigLoader {
     private static ConfigLoader configLoader;
 
     private ConfigLoader() {
-        String env = System.getProperty("env", "STAGING");
-        properties = PropertyUtils.propertyLoader("src/test/resources/stg_config.properties");
+        String env = System.getProperty("env", String.valueOf(EnvTypes.STAGING));
+        switch (EnvTypes.valueOf(env)) {
+            case STAGING ->
+                    properties = PropertyUtils.propertyLoader("src/test/resources/stg_config.properties");
+            case PRODUCTION ->
+                    properties = PropertyUtils.propertyLoader("src/test/resources/prod_config.properties");
+            default ->
+                    throw new IllegalStateException("Invalid env type " + env);
+        }
     }
 
     public static ConfigLoader getInstance() {
