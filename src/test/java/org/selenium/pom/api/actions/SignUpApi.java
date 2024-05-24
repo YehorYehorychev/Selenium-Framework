@@ -1,6 +1,5 @@
 package org.selenium.pom.api.actions;
 
-import com.google.common.collect.HashBiMap;
 import io.restassured.http.Cookies;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
@@ -36,18 +35,16 @@ public class SignUpApi {
     }
 
     private Response getAccount() {
-        Cookies cookies = new Cookies();
         Response response =
-         given().
-                baseUri(ConfigLoader.getInstance().getBaseUrl()).
-                cookies(cookies).
-                 log().all().
-         when().
-                get("/account").
-         then().
-                log().all().
-                extract().
-                response();
+                given()
+                        .baseUri(ConfigLoader.getInstance().getBaseUrl())
+                        .log().all()
+                        .when()
+                        .get("/account")
+                        .then()
+                        .log().all()
+                        .extract()
+                        .response();
         if (response.getStatusCode() != 200) {
             throw new RuntimeException("Failed to fetch the account " + response.getStatusCode());
         }
@@ -55,31 +52,33 @@ public class SignUpApi {
     }
 
     public Response register(UserData userData) {
-        Cookies cookies = new Cookies();
-        Header header = new Header("Content-Type", "application/x-www-form-urlencoded");
+        Header header = new Header("content-type", "application/x-www-form-urlencoded");
         Headers headers = new Headers(header);
         HashMap<String, String> formParams = new HashMap<>();
-        formParams.put("login", userData.getLogin());
+        formParams.put("username", userData.getLogin());
         formParams.put("email", userData.getEmail());
         formParams.put("password", userData.getPassword());
-        formParams.put("#woocommerce-register-nonce", fetchRegisterNonceValueUsingJsoup());
+        formParams.put("woocommerce-register-nonce", fetchRegisterNonceValueUsingJsoup());
         formParams.put("register", "Register");
+
+        System.out.println("Form parameters: " + formParams);  // Log form parameters
+
         Response response =
-                given().
-                        baseUri(ConfigLoader.getInstance().getBaseUrl()).
-                        headers(headers).
-                        body(formParams).
-                        cookies(cookies).
-                        log().all().
-                        when().
-                        post("/account").
-                        then().
-                        log().all().
-                        extract().
-                        response();
+                given()
+                        .baseUri(ConfigLoader.getInstance().getBaseUrl())
+                        .headers(headers)
+                        .formParams(formParams)
+                        .log().all()
+                        .when()
+                        .post("/account")
+                        .then()
+                        .log().all()
+                        .extract()
+                        .response();
         if (response.getStatusCode() != 302) {
             throw new RuntimeException("Failed to register the account " + response.getStatusCode());
         }
+        this.cookies = response.getDetailedCookies();
         return response;
     }
 }

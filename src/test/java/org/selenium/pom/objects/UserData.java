@@ -13,6 +13,11 @@ public class UserData {
         this.email = email;
     }
 
+    public UserData(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
+
     public String getLogin() {
         return login;
     }
@@ -35,7 +40,8 @@ public class UserData {
         return email;
     }
 
-    public void setEmail(String email) {
+    public UserData setEmail(String email) {
         this.email = email;
+        return this;
     }
 }
