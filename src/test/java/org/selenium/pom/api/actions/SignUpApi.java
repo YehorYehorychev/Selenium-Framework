@@ -13,7 +13,7 @@ public class SignUpApi {
         return cookies;
     }
 
-    private void getAccount() {
+    public Response getAccount() {
         Response response =
          given().
                 baseUri(ConfigLoader.getInstance().getBaseUrl()).
@@ -28,5 +28,6 @@ public class SignUpApi {
         if (response.getStatusCode() != 200) {
             throw new RuntimeException("Failed to fetch the account " + response.getStatusCode());
         }
+        return response;
     }
 }
