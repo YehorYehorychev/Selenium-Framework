@@ -9,15 +9,21 @@
       <option name="ignoredModules">
         <list>
           <option value="MasterSeleniumFramework" />
+          <option value="MasterSeleniumFramework" />
+          <option value="MasterSeleniumFramework" />
         </list>
       </option>
       <option name="ignoredPackages">
         <list>
           <option value="org.codehaus.plexus:plexus-utils:3.0.10" />
+          <option value="org.yaml:snakeyaml:1.23" />
+          <option value="commons-codec:commons-codec:1.11" />
         </list>
       </option>
       <option name="ignoredReasons">
         <list>
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
           <option value="Not exploitable" />
         </list>
       </option>
