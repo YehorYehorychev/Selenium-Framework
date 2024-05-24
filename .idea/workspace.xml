@@ -36,6 +36,7 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/DummyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/DummyClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/SignUpApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/SignUpApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
