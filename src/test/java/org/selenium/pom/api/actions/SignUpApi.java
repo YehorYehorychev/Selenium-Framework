@@ -14,10 +14,11 @@ public class SignUpApi {
     }
 
     public Response getAccount() {
+        Cookies cookies = new Cookies();
         Response response =
          given().
                 baseUri(ConfigLoader.getInstance().getBaseUrl()).
-                cookies(getCookies()).
+                cookies(cookies).
                  log().all().
          when().
                 get("/account").
