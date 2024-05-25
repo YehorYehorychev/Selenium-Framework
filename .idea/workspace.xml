@@ -36,8 +36,7 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/CartApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/CartApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/DummyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/DummyClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +116,7 @@
       <recent name="C:\Users\egory\IdeaProjects\Selenium-Framework" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Pal">
+  <component name="RunManager" selected="Application.DummyClass">
     <configuration name="DummyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.selenium.pom.api.actions.DummyClass" />
       <module name="MasterSeleniumFramework" />
@@ -257,8 +256,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Pal" />
         <item itemvalue="Application.DummyClass" />
+        <item itemvalue="Application.Pal" />
         <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
         <item itemvalue="TestNG.SearchTest.searchWithPartialMatch" />
         <item itemvalue="TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu" />
