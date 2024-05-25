@@ -5,39 +5,51 @@ import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import org.selenium.pom.utils.ConfigLoader;
-
 import java.util.HashMap;
+
 
 import static io.restassured.RestAssured.given;
 
 public class CartApi {
+    private Cookies cookies;
 
-    public Response addToCart() {
+    public CartApi() {}
+
+    public CartApi(Cookies cookies) {
+        this.cookies = cookies;
+    }
+
+    public Cookies getCookies() {
+        return cookies;
+    }
+
+    public Response addToCart(int productId, int quantity) {
         Header header = new Header("content-type", "application/x-www-form-urlencoded");
         Headers headers = new Headers(header);
-        HashMap<String, String> formParams = new HashMap<>();
-        formParams.put("username", userData.getLogin());
-        formParams.put("email", userData.getEmail());
-        formParams.put("password", userData.getPassword());
-        formParams.put("woocommerce-register-nonce", fetchRegisterNonceValueUsingJsoup());
-        formParams.put("register", "Register");
+        HashMap<String, Object> formParams = new HashMap<>();
+        formParams.put("product_sku", "");
+        formParams.put("product_id", productId);
+        formParams.put("quantity", quantity);
 
-        System.out.println("Form parameters: " + formParams);  // Log form parameters
+        if (cookies == null) {
+            cookies = new Cookies();
+        }
 
         Response response =
                 given()
                         .baseUri(ConfigLoader.getInstance().getBaseUrl())
                         .headers(headers)
                         .formParams(formParams)
+                        .cookies(cookies)
                         .log().all()
                         .when()
-                        .post("/account")
+                        .post("/?wc-ajax=add_to_cart")
                         .then()
                         .log().all()
                         .extract()
                         .response();
-        if (response.getStatusCode() != 302) {
-            throw new RuntimeException("Failed to register the account " + response.getStatusCode());
+        if (response.getStatusCode() != 200) {
+            throw new RuntimeException("Failed to add the product " + productId + " to the cart" + ", HTTP STATUS CODE: " + response.getStatusCode());
         }
         this.cookies = response.getDetailedCookies();
         return response;
