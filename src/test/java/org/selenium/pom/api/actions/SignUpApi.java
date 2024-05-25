@@ -52,6 +52,7 @@ public class SignUpApi {
     }
 
     public Response register(UserData userData) {
+        Cookies cookies = new Cookies();
         Header header = new Header("content-type", "application/x-www-form-urlencoded");
         Headers headers = new Headers(header);
         HashMap<String, String> formParams = new HashMap<>();
