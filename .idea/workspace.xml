@@ -38,9 +38,6 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/DummyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/DummyClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/SignUpApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/SignUpApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/objects/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/objects/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/userCredentials.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/userCredentials.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +83,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.DummyClass.executor": "Run",
+    "Application.Pal.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.AddToCart.addToCartFromStorePage.executor": "Run",
     "TestNG.AddToCartTest.addToCartFromStorePage.executor": "Run",
@@ -119,9 +117,22 @@
       <recent name="C:\Users\egory\IdeaProjects\Selenium-Framework" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DummyClass">
+  <component name="RunManager" selected="Application.Pal">
     <configuration name="DummyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.selenium.pom.api.actions.DummyClass" />
+      <module name="MasterSeleniumFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.selenium.pom.api.actions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Pal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.api.actions.Pal" />
       <module name="MasterSeleniumFramework" />
       <extension name="coverage">
         <pattern>
@@ -147,34 +158,6 @@
       <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
       <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.AddToCartTest" />
       <option name="METHOD_NAME" value="addToCartFromStorePage" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MasterSeleniumFramework" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.selenium.pom.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.GuestCheckoutTest" />
-      <option name="METHOD_NAME" value="loginToExistingAccountAndCheckoutUsingDirectBankTransfer" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -266,19 +249,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Pal" />
       <item itemvalue="Application.DummyClass" />
       <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
       <item itemvalue="TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu" />
       <item itemvalue="TestNG.SearchTest.searchWithPartialMatch" />
-      <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Pal" />
         <item itemvalue="Application.DummyClass" />
         <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
         <item itemvalue="TestNG.SearchTest.searchWithPartialMatch" />
         <item itemvalue="TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu" />
-        <item itemvalue="TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer" />
       </list>
     </recent_temporary>
   </component>
