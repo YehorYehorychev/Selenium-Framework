@@ -73,6 +73,11 @@ public class CheckoutPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    public CheckoutPage load() {
+        load("/checkout");
+        return this;
+    }
+
     public CheckoutPage enterFirstName(String firstName) {
         waitForElementToBeVisible(firstNameField);
         firstNameField.clear();
