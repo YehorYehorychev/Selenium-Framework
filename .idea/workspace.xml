@@ -89,6 +89,7 @@
     "TestNG.AddToCartTest.addToCartFromStorePage.executor": "Run",
     "TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml (1).executor": "Run",
     "TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml.executor": "Run",
+    "TestNG.CheckoutTest.guestCheckoutUsingDirectBankTransfer.executor": "Run",
     "TestNG.GuestCheckoutTest.executor": "Run",
     "TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (1).executor": "Run",
     "TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (2).executor": "Run",
@@ -100,7 +101,7 @@
     "TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu.executor": "Run",
     "TestNG.SearchTest.searchWithPartialMatch.executor": "Run",
     "TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer.executor": "Run",
-    "git-widget-placeholder": "LoginTest",
+    "git-widget-placeholder": "GuestCheckout",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/egory/IdeaProjects/Selenium-Framework/src/test/resources",
     "project.structure.last.edited": "Modules",
@@ -118,7 +119,7 @@
       <recent name="C:\Users\egory\IdeaProjects\Selenium-Framework" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.loginDuringCheckout">
+  <component name="RunManager" selected="TestNG.CheckoutTest.guestCheckoutUsingDirectBankTransfer">
     <configuration name="DummyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.selenium.pom.api.actions.DummyClass" />
       <module name="MasterSeleniumFramework" />
@@ -173,7 +174,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.loginDuringCheckout" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckoutTest.guestCheckoutUsingDirectBankTransfer" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -185,8 +186,8 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.LoginTest" />
-      <option name="METHOD_NAME" value="loginDuringCheckout" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.CheckoutTest" />
+      <option name="METHOD_NAME" value="guestCheckoutUsingDirectBankTransfer" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -201,7 +202,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.searchWithPartialMatch" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.loginDuringCheckout" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -213,8 +214,8 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.SearchTest" />
-      <option name="METHOD_NAME" value="searchWithPartialMatch" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.LoginTest" />
+      <option name="METHOD_NAME" value="loginDuringCheckout" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -252,17 +253,17 @@
     <list>
       <item itemvalue="Application.Pal" />
       <item itemvalue="Application.DummyClass" />
+      <item itemvalue="TestNG.CheckoutTest.guestCheckoutUsingDirectBankTransfer" />
       <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
       <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
-      <item itemvalue="TestNG.SearchTest.searchWithPartialMatch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckoutTest.guestCheckoutUsingDirectBankTransfer" />
         <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
         <item itemvalue="Application.DummyClass" />
         <item itemvalue="Application.Pal" />
         <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
-        <item itemvalue="TestNG.SearchTest.searchWithPartialMatch" />
       </list>
     </recent_temporary>
   </component>
