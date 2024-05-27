@@ -24,9 +24,9 @@ public class LoginTest extends BaseTest {
         CartApi cartApi = new CartApi();
         Product product = new Product(1215);
         cartApi.addToCart(product.getId(), 1);
+        CheckoutPage checkoutPage = new CheckoutPage(getDriver()).load();
         injectCookiesToBrowser(cartApi.getCookies());
-
-        CheckoutPage checkoutPage = new CheckoutPage(getDriver()).
+        checkoutPage.
                 load().
                 clickHereToLoginLink().
                 setUserCredentials(userData);
