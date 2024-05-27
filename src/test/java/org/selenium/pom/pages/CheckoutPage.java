@@ -216,6 +216,6 @@ public class CheckoutPage extends BasePage {
     }
 
     public String getProductName() {
-        wa
+        return waitForElementToBeVisible(productName).getText();
     }
 }

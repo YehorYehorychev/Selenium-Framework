@@ -7,6 +7,7 @@ import org.selenium.pom.objects.Product;
 import org.selenium.pom.objects.UserData;
 import org.selenium.pom.pages.CheckoutPage;
 import org.selenium.pom.utils.FakerUtils;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -29,5 +30,6 @@ public class LoginTest extends BaseTest {
                 load().
                 clickHereToLoginLink().
                 setUserCredentials(userData);
+        Assert.assertTrue(checkoutPage.getProductName().contains(product.getName()));
     }
 }
