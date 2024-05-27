@@ -36,6 +36,8 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,11 +95,12 @@
     "TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer.executor": "Run",
     "TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer (1).executor": "Run",
     "TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer.executor": "Run",
+    "TestNG.LoginTest.loginDuringCheckout.executor": "Run",
     "TestNG.MyFirstTestCase.dummyTest.executor": "Run",
     "TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu.executor": "Run",
     "TestNG.SearchTest.searchWithPartialMatch.executor": "Run",
     "TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer.executor": "Run",
-    "git-widget-placeholder": "AtomicTests",
+    "git-widget-placeholder": "LoginTest",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/egory/IdeaProjects/Selenium-Framework/src/test/resources",
     "project.structure.last.edited": "Modules",
@@ -115,7 +118,7 @@
       <recent name="C:\Users\egory\IdeaProjects\Selenium-Framework" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DummyClass">
+  <component name="RunManager" selected="TestNG.LoginTest.loginDuringCheckout">
     <configuration name="DummyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.selenium.pom.api.actions.DummyClass" />
       <module name="MasterSeleniumFramework" />
@@ -170,7 +173,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavigationTest.NavigateFromHomeToStoreUsingMainMenu" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.loginDuringCheckout" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -182,8 +185,8 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.NavigationTest" />
-      <option name="METHOD_NAME" value="NavigateFromHomeToStoreUsingMainMenu" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.LoginTest" />
+      <option name="METHOD_NAME" value="loginDuringCheckout" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -249,17 +252,17 @@
     <list>
       <item itemvalue="Application.Pal" />
       <item itemvalue="Application.DummyClass" />
+      <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
       <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
-      <item itemvalue="TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu" />
       <item itemvalue="TestNG.SearchTest.searchWithPartialMatch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
         <item itemvalue="Application.DummyClass" />
         <item itemvalue="Application.Pal" />
         <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
         <item itemvalue="TestNG.SearchTest.searchWithPartialMatch" />
-        <item itemvalue="TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu" />
       </list>
     </recent_temporary>
   </component>

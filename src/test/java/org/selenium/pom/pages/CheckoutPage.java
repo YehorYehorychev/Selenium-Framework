@@ -68,9 +68,17 @@ public class CheckoutPage extends BasePage {
     @FindBy(css = "button[value='Login']")
     private WebElement loginButton;
 
+    @FindBy(css = "td[class='product-name']")
+    private WebElement productName;
+
     public CheckoutPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
+    }
+
+    public CheckoutPage load() {
+        load("/checkout");
+        return this;
     }
 
     public CheckoutPage enterFirstName(String firstName) {
@@ -205,5 +213,9 @@ public class CheckoutPage extends BasePage {
             directBankTransferRadioButton.click();
         }
         return this;
+    }
+
+    public String getProductName() {
+        return waitForElementToBeVisible(productName).getText();
     }
 }

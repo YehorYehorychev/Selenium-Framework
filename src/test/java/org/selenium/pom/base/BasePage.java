@@ -52,12 +52,12 @@ public class BasePage {
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public WebElement waitForElementToBePresent(WebElement element) {
-        return wait.until(ExpectedConditions.visibilityOf(element));
-    }
-
     public boolean waitForTextToBePresentInElement(WebElement element, String text) {
         return wait.until(ExpectedConditions.textToBePresentInElement(element, text));
+    }
+
+    public WebElement waitForVisibilityOfElementLocated(By locator) {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
     public boolean waitForTextMatches(By element, String text) {
