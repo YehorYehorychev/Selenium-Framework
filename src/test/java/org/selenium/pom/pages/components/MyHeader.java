@@ -13,7 +13,7 @@ public class MyHeader extends BasePage {
         super(driver);
     }
 
-    public StorePage navigateToStoreUsingMenu(){
+    public StorePage navigateToStoreUsingMenu() {
         wait.until(ExpectedConditions.elementToBeClickable(storeMenuLink)).click();
         return new StorePage(driver);
     }

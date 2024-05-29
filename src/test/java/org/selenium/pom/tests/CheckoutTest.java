@@ -30,6 +30,7 @@ public class CheckoutTest extends BaseTest {
                 placeOrder();
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
+
     @Test
     public void LoginAndCheckoutUsingDirectBankTransfer() throws IOException, InterruptedException {
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);

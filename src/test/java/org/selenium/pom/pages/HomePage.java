@@ -35,7 +35,7 @@ public class HomePage extends BasePage {
     }
 
     public ProductPage navigateToTheProduct(int id) throws IOException {
-        driver.findElement(By.xpath("//h2[normalize-space()='"+ new Product(id).getName() + "']")).click();
+        driver.findElement(By.xpath("//h2[normalize-space()='" + new Product(id).getName() + "']")).click();
         return new ProductPage(driver);
     }
 

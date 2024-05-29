@@ -5,7 +5,8 @@ public class UserData {
     private String password;
     private String email;
 
-    public UserData() {}
+    public UserData() {
+    }
 
     public UserData(String login, String password, String email) {
         this.login = login;

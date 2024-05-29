@@ -5,6 +5,7 @@ import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import org.selenium.pom.utils.ConfigLoader;
+
 import java.util.HashMap;
 
 
@@ -13,7 +14,8 @@ import static io.restassured.RestAssured.given;
 public class CartApi {
     private Cookies cookies;
 
-    public CartApi() {}
+    public CartApi() {
+    }
 
     public CartApi(Cookies cookies) {
         this.cookies = cookies;

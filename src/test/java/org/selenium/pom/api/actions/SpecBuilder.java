@@ -8,14 +8,14 @@ import io.restassured.specification.ResponseSpecification;
 import org.selenium.pom.utils.ConfigLoader;
 
 public class SpecBuilder {
-    public static RequestSpecification getRequestSpec(){
+    public static RequestSpecification getRequestSpec() {
         return new RequestSpecBuilder().
                 setBaseUri(ConfigLoader.getInstance().getBaseUrl()).
                 log(LogDetail.ALL).
                 build();
     }
 
-    public static ResponseSpecification getResponseSpec(){
+    public static ResponseSpecification getResponseSpec() {
         return new ResponseSpecBuilder().
                 log(LogDetail.ALL).
                 build();
