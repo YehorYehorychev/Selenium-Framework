@@ -21,7 +21,7 @@ public class LoginTest extends BaseTest {
         UserData user = new UserData().
                 setLogin(username).
                 setPassword("demopwd").
-                setEmail(username + "@askomdch.com");
+                setEmail(username + "@gmail.com");
         SignUpApi signUpApi = new SignUpApi();
         signUpApi.register(user);
         CartApi cartApi = new CartApi(new Cookies());
@@ -37,9 +37,9 @@ public class LoginTest extends BaseTest {
     }
 
     @Test()
-    public void shouldNotLoginWithAnInvalidPassword(){
+    public void shouldNotLoginWithAnInvalidPassword() {
         String username = "demouser" + new FakerUtils().generateRandomNumber();
-        UserData user = new UserData(username, "demopwd", username + "@askomdch.com");
+        UserData user = new UserData(username, "demopwd", username + "@gmail.com");
         new SignUpApi().register(user);
 
         AccountPage accountPage = new AccountPage(getDriver()).load();
@@ -49,9 +49,9 @@ public class LoginTest extends BaseTest {
     }
 
     @Test()
-    public void shouldNotLoginWithANonExistingUser(){
+    public void shouldNotLoginWithANonExistingUser() {
         String username = "demouser" + new FakerUtils().generateRandomNumber();
-        UserData user = new UserData(username, "demopwd", username + "@askomdch.com");
+        UserData user = new UserData(username, "demopwd", username + "@gmail.com");
 
         AccountPage accountPage = new AccountPage(getDriver()).load();
         accountPage.login(user.getLogin(), "demopwd");

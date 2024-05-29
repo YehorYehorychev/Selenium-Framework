@@ -37,21 +37,7 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/BillingApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/BillingApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/objects/BillingAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/objects/BillingAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/StorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/StorePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/AddToCartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/CheckoutTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/NavigationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/NavigationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/SearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/ConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/ConfigLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/EnvTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/constants/EnvTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/FakerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/FakerUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/myBillingAddress.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/myBillingAddress.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +114,7 @@
     "TestNG.SearchTest.executor": "Run",
     "TestNG.SearchTest.searchWithPartialMatch.executor": "Run",
     "TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer.executor": "Run",
-    "git-widget-placeholder": "LoginAndCheckout",
+    "git-widget-placeholder": "CodeRefactor",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/egory/IdeaProjects/Selenium-Framework/src/test/resources",
     "project.structure.last.edited": "Modules",
@@ -149,7 +135,7 @@
       <recent name="org.selenium.pom.constants" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml">
+  <component name="RunManager" selected="TestNG.LoginTest">
     <configuration name="C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
@@ -160,35 +146,6 @@
       <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckoutTest.CheckoutWithAnAccountHavingABillingAddress" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MasterSeleniumFramework" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.selenium.pom.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.CheckoutTest" />
-      <option name="METHOD_NAME" value="CheckoutWithAnAccountHavingABillingAddress" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
@@ -218,6 +175,34 @@
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginDuringCheckout" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MasterSeleniumFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.selenium.pom.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.LoginTest" />
+      <option name="METHOD_NAME" value="loginDuringCheckout" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -294,6 +279,7 @@
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -307,7 +293,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.CheckoutTest.CheckoutWithAnAccountHavingABillingAddress" />
+      <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
       <item itemvalue="TestNG.LoginTest" />
       <item itemvalue="TestNG.NavigationTest" />
       <item itemvalue="TestNG.SearchTest" />
@@ -315,11 +301,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
         <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
         <item itemvalue="TestNG.SearchTest" />
         <item itemvalue="TestNG.NavigationTest" />
-        <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.CheckoutTest.CheckoutWithAnAccountHavingABillingAddress" />
       </list>
     </recent_temporary>
   </component>

@@ -58,23 +58,23 @@ public class StorePage extends BasePage {
         return this;
     }
 
-    public ProductPage searchExactMatch(String txt){
+    public ProductPage searchExactMatch(String txt) {
         enterTextInSearchFld(txt).clickSearchBtn();
         return new ProductPage(driver);
     }
 
-    private StorePage enterTextInSearchFld(String txt){
+    private StorePage enterTextInSearchFld(String txt) {
         waitForElementToBeVisible(searchField).sendKeys(txt);
         return this;
     }
 
     public ProductPage navigateToTheProduct(Integer id) throws IOException {
         wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath("//h2[normalize-space()='"+ new Product(id).getName() + "']"))).click();
+                By.xpath("//h2[normalize-space()='" + new Product(id).getName() + "']"))).click();
         return new ProductPage(driver);
     }
 
-    public String getInfo(){
+    public String getInfo() {
         return waitForElementToBeVisible(infoTxt).getText();
     }
 
@@ -82,7 +82,7 @@ public class StorePage extends BasePage {
         waitForElementToBeClickable(searchButton).click();
     }
 
-    private StorePage clickSearchBtn(){
+    private StorePage clickSearchBtn() {
         waitForElementToBeClickable(searchButton).click();
         return this;
     }
