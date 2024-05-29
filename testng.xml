@@ -4,22 +4,22 @@
         to run tests using XML file or ADD: -ea -Dbrowser=CHROME to run tests through IDE-->
 
 <suite name="Suite1" verbose="1" thread-count="2" parallel="tests">
-    <test name="Firefox" thread-count="2" parallel="methods">
+<!--    <test name="Firefox" thread-count="2" parallel="methods">
         <parameter name="browser" value="FIREFOX"/>
         <classes>
             <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
         </classes>
-    </test>
-    <test name="Chrome" thread-count="2" parallel="methods">
+    </test>-->
+    <test name="Chrome" thread-count="6" parallel="methods">
         <parameter name="browser" value="CHROME"/>
-        <classes>
-            <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
-        </classes>
+        <packages>
+            <package name="org.selenium.pom.tests"/>
+        </packages>
     </test>
-    <test name="Edge" thread-count="2" parallel="methods">
+<!--    <test name="Edge" thread-count="2" parallel="methods">
         <parameter name="browser" value="EDGE"/>
         <classes>
             <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
         </classes>
-    </test>
+    </test>-->
 </suite>

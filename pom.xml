@@ -22,11 +22,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-                    <!--  <parallel>methods</parallel>
-                      <threadCount>2</threadCount>-->
-                    <suiteXmlFiles>
+                      <parallel>methods</parallel>
+                      <threadCount>6</threadCount>
+<!--                    <suiteXmlFiles>
                         <suiteXmlFile>${suiteFile}</suiteXmlFile>
-                    </suiteXmlFiles>
+                    </suiteXmlFiles>-->
                 </configuration>
             </plugin>
         </plugins>

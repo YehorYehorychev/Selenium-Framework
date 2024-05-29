@@ -36,7 +36,11 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/FakerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/FakerUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/GuestCheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/GuestCheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +123,7 @@
       <recent name="C:\Users\egory\IdeaProjects\Selenium-Framework" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckoutTest.loginAndCheckoutUsingDirectBankTransfer">
+  <component name="RunManager" selected="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml">
     <configuration name="DummyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.selenium.pom.api.actions.DummyClass" />
       <module name="MasterSeleniumFramework" />
@@ -133,15 +137,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.api.actions.Pal" />
+    <configuration name="C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.selenium.pom.api.actions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -251,19 +263,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Pal" />
       <item itemvalue="Application.DummyClass" />
+      <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
       <item itemvalue="TestNG.CheckoutTest.loginAndCheckoutUsingDirectBankTransfer" />
       <item itemvalue="TestNG.CheckoutTest.guestCheckoutUsingDirectBankTransfer" />
       <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
         <item itemvalue="TestNG.CheckoutTest.loginAndCheckoutUsingDirectBankTransfer" />
         <item itemvalue="TestNG.CheckoutTest.guestCheckoutUsingDirectBankTransfer" />
         <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
         <item itemvalue="Application.DummyClass" />
-        <item itemvalue="Application.Pal" />
       </list>
     </recent_temporary>
   </component>
