@@ -80,6 +80,10 @@ public class BasePage {
         return wait.until(ExpectedConditions.invisibilityOf(element));
     }
 
+    public boolean waitForInvisibilityOfElement(By element) {
+        return wait.until(ExpectedConditions.invisibilityOfElementLocated(element));
+    }
+
     public void waitForAlert() {
         wait.until(ExpectedConditions.alertIsPresent());
     }

@@ -38,7 +38,8 @@ public class BillingApi {
         formParams.put("action", "edit_address");
         formParams.put("save_address", "Save address");
         formParams.put("billing_email", billingAddress.getEmail());
-        Response response = ApiRequest.post(EndPoint.ACCOUNT_EDIT_BILLING_ADDRESS.url, headers, formParams, cookies);
+        Response response = ApiRequest.post(
+                EndPoint.ACCOUNT_EDIT_BILLING_ADDRESS.url, headers, formParams, cookies);
 
         if (response.getStatusCode() != 302) {
             throw new RuntimeException("Failed to edit the address of the account -" + response.getStatusCode());
