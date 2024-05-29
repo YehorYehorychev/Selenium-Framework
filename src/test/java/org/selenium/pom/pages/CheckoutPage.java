@@ -1,5 +1,7 @@
 package org.selenium.pom.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -70,6 +72,11 @@ public class CheckoutPage extends BasePage {
 
     @FindBy(css = "td[class='product-name']")
     private WebElement productName;
+
+    @FindBy(id = "payment_method_cod")
+    private WebElement cashOnDeliveryTransferRadioBtn;
+
+    private By loginByButton = By.cssSelector("button[value='Login']");
 
     public CheckoutPage(WebDriver driver) {
         super(driver);
@@ -200,11 +207,15 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
-    public CheckoutPage login(String username, String password) {
-        enterUserName(username);
-        enterPassword(password);
-        clickLoginButton();
+    private CheckoutPage waitForLoginBtnToDisappear(){
+        waitForInvisibilityOfElement(loginByButton);
         return this;
+    }
+
+    public CheckoutPage login(UserData user){
+        return enterUserName(user.getLogin()).
+                enterPassword(user.getPassword()).
+                clickLoginButton().waitForLoginBtnToDisappear();
     }
 
     public CheckoutPage selectDirectBankTransfer() {
@@ -215,7 +226,30 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
-    public String getProductName() {
-        return waitForElementToBeVisible(productName).getText();
+    public CheckoutPage selectCashOnDeliveryTransfer() {
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                waitForElementToBeClickable(cashOnDeliveryTransferRadioBtn).click();
+                break;
+            } catch (StaleElementReferenceException e) {
+                System.out.println("StaleElementReferenceException caught. Retrying... " + e);
+            }
+            attempts++;
+        }
+        return this;
+    }
+
+    public String getProductName() throws Exception {
+        int i = 5;
+        while(i > 0){
+            try {
+                return waitForElementToBeVisible(productName).getText();
+            }catch (StaleElementReferenceException e){
+                System.out.println("NOT FOUND. TRYING AGAIN" + e);
+            }
+            i--;
+        }
+        throw new Exception("Element not found");
     }
 }

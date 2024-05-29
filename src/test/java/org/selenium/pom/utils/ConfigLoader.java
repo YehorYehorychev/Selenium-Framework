@@ -1,5 +1,7 @@
 package org.selenium.pom.utils;
 
+import org.selenium.pom.constants.EnvTypes;
+
 import java.util.Properties;
 
 public class ConfigLoader {

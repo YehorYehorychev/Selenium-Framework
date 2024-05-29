@@ -9,6 +9,8 @@ public class BillingAddress {
     private String email;
     private String country;
     private String state;
+    private String company;
+    private String phone;
 
     public BillingAddress() {
     }
@@ -91,5 +93,21 @@ public class BillingAddress {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }
