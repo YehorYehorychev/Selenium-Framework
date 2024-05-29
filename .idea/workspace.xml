@@ -36,8 +36,7 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/CheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/FakerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/FakerUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +89,7 @@
     "TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml (1).executor": "Run",
     "TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml.executor": "Run",
     "TestNG.CheckoutTest.guestCheckoutUsingDirectBankTransfer.executor": "Run",
+    "TestNG.CheckoutTest.loginAndCheckoutUsingDirectBankTransfer.executor": "Run",
     "TestNG.GuestCheckoutTest.executor": "Run",
     "TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (1).executor": "Run",
     "TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (2).executor": "Run",
