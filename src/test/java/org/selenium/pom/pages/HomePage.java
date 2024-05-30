@@ -16,6 +16,9 @@ public class HomePage extends BasePage {
     @FindBy(css = "#menu-item-1227 > a")
     private WebElement storeMenuLink;
 
+    private MyHeader myHeader;
+    private ProductThumbnail productThumbnail;
+
     public MyHeader getMyHeader() {
         return myHeader;
     }
@@ -23,9 +26,6 @@ public class HomePage extends BasePage {
     public ProductThumbnail getProductThumbnail() {
         return productThumbnail;
     }
-
-    private MyHeader myHeader;
-    private ProductThumbnail productThumbnail;
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -44,8 +44,8 @@ public class HomePage extends BasePage {
         return this;
     }
 
-    public StorePage navigateToStoreUsingMenu() {
+/*    public StorePage navigateToStoreUsingMenu() {
         waitForElementToBeClickable(storeMenuLink).click();
         return new StorePage(driver);
-    }
+    }*/
 }
