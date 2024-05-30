@@ -43,9 +43,4 @@ public class HomePage extends BasePage {
 //        waitForTitleToContain("AskOmDch"); // Uncomment if title check is needed
         return this;
     }
-
-/*    public StorePage navigateToStoreUsingMenu() {
-        waitForElementToBeClickable(storeMenuLink).click();
-        return new StorePage(driver);
-    }*/
 }

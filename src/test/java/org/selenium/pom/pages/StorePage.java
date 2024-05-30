@@ -90,21 +90,6 @@ public class StorePage extends BasePage {
         return waitForElementToBeVisible(title).getText();
     }
 
-/*    private By getAddToCartButtonElement(String productName) {
-        return By.cssSelector("a[aria-label='Add “" + productName + "” to your cart']");
-    }*/
-
-/*    public StorePage clickAddToCartButton(String productName) {
-        By addToCartButton = getAddToCartButtonElement(productName);
-        waitForElementToBeClickableUsingBy(addToCartButton).click();
-        return this;
-    }
-
-    public CartPage clickViewCart() {
-        waitForElementToBeClickable(viewCartLink).click();
-        return new CartPage(driver);
-    }*/
-
     public Boolean isLoaded() {
         return waitForUrlToContain("/store");
     }
