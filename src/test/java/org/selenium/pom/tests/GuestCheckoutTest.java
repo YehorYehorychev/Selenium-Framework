@@ -8,7 +8,6 @@ import org.selenium.pom.pages.CartPage;
 import org.selenium.pom.pages.CheckoutPage;
 import org.selenium.pom.pages.HomePage;
 import org.selenium.pom.pages.StorePage;
-import org.selenium.pom.utils.ConfigLoader;
 import org.selenium.pom.utils.JacksonUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,7 +16,7 @@ import java.io.IOException;
 
 public class GuestCheckoutTest extends BaseTest {
 
-    //    @Test
+    @Test
     public void guestCheckoutUsingDirectBankTransfer() throws IOException {
         String searchFor = "Blue";
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
@@ -40,7 +39,7 @@ public class GuestCheckoutTest extends BaseTest {
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 
-    //    @Test
+    @Test
     public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws IOException {
         String searchFor = "Blue";
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
