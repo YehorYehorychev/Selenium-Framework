@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.selenium.pom.base.BasePage;
 import org.selenium.pom.objects.BillingAddress;
@@ -230,6 +231,7 @@ public class CheckoutPage extends BasePage {
         int attempts = 0;
         while (attempts < 3) {
             try {
+                waitForInvisibilityOfElement(By.cssSelector(".blockUI.blockOverlay"));
                 waitForElementToBeClickable(cashOnDeliveryTransferRadioBtn).click();
                 break;
             } catch (StaleElementReferenceException e) {

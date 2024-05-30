@@ -1,11 +1,11 @@
 {
   "firstName": "demo",
   "lastName": "user",
-  "country": "India",
-  "addressLineOne": "Pune",
-  "city": "Pune",
-  "state": "Maharashtra",
-  "postalCode": "411001",
+  "country": "United States (US)",
+  "addressLineOne": "California st",
+  "city": "Mountain View",
+  "state": "California",
+  "postalCode": "94040",
   "email": "askomdch@gmail.com",
   "company": "TDC",
   "phone": "1234567890"
