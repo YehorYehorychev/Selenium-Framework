@@ -114,7 +114,7 @@
     "TestNG.SearchTest.executor": "Run",
     "TestNG.SearchTest.searchWithPartialMatch.executor": "Run",
     "TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer.executor": "Run",
-    "git-widget-placeholder": "DataProvider",
+    "git-widget-placeholder": "Composition",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/egory/IdeaProjects/Selenium-Framework/src/test/resources",
     "project.structure.last.edited": "Modules",
@@ -135,7 +135,7 @@
       <recent name="org.selenium.pom.constants" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml">
+  <component name="RunManager" selected="TestNG.GuestCheckoutTest">
     <configuration name="C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
@@ -244,7 +244,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GuestCheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -256,7 +256,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.GuestCheckoutTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
@@ -297,16 +297,16 @@
       <item itemvalue="TestNG.CheckoutTest" />
       <item itemvalue="TestNG.CheckoutTest.CheckoutWithAnAccountHavingABillingAddress" />
       <item itemvalue="TestNG.CheckoutTest.LoginAndCheckoutUsingCashOnDelivery" />
-      <item itemvalue="TestNG.LoginTest" />
+      <item itemvalue="TestNG.GuestCheckoutTest" />
       <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GuestCheckoutTest" />
         <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
         <item itemvalue="TestNG.CheckoutTest.CheckoutWithAnAccountHavingABillingAddress" />
         <item itemvalue="TestNG.CheckoutTest.LoginAndCheckoutUsingCashOnDelivery" />
         <item itemvalue="TestNG.CheckoutTest" />
-        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>

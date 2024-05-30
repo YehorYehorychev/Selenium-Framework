@@ -17,7 +17,7 @@ public class ProductThumbnail extends BasePage {
         return By.cssSelector("a[aria-label='Add “" + productName + "” to your cart']");
     }
 
-    public ProductThumbnail clickAddToCartBtn(String productName) {
+    public ProductThumbnail clickAddToCartButton(String productName) {
         By addToCartBtn = getAddToCartBtnElement(productName);
         wait.until(ExpectedConditions.elementToBeClickable(addToCartBtn)).click();
         return this;
