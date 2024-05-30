@@ -28,7 +28,7 @@ public class StorePage extends BasePage {
     @FindBy(css = ".woocommerce-info")
     private WebElement infoTxt;
 
-    private ProductThumbnail productThumbnail;
+    private final ProductThumbnail productThumbnail;
 
     public ProductThumbnail getProductThumbnail() {
         return productThumbnail;

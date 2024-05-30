@@ -16,8 +16,8 @@ public class HomePage extends BasePage {
     @FindBy(css = "#menu-item-1227 > a")
     private WebElement storeMenuLink;
 
-    private MyHeader myHeader;
-    private ProductThumbnail productThumbnail;
+    private final MyHeader myHeader;
+    private final ProductThumbnail productThumbnail;
 
     public MyHeader getMyHeader() {
         return myHeader;
