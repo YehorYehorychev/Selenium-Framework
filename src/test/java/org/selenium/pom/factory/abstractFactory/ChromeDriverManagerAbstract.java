@@ -5,13 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.selenium.pom.factory.DriverManager;
 
-public class ChromeDriverManagerAbstract implements DriverManager {
+public class ChromeDriverManagerAbstract extends DriverManagerAbstract {
 
     @Override
-    public WebDriver createDriver() {
+    protected void startDriver() {
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
-        return driver;
     }
 }
