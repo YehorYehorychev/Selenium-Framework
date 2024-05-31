@@ -2,7 +2,7 @@ package org.selenium.pom.factory.abstractFactory;
 
 import org.openqa.selenium.WebDriver;
 
-public abstract class DMAbstract {
+public abstract class DriverManagerAbstract {
     protected WebDriver driver;
 
     protected abstract void startDriver();

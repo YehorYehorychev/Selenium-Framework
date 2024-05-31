@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.selenium.pom.factory.DriverManager;
 
-public class FirefoxDriverManager implements DriverManager {
+public class FirefoxDriverManagerAbstract implements DriverManager {
 
     @Override
     public WebDriver createDriver() {

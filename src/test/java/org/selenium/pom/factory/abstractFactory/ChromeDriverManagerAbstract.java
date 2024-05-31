@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.selenium.pom.factory.DriverManager;
 
-public class ChromeDriverManager implements DriverManager {
+public class ChromeDriverManagerAbstract implements DriverManager {
 
     @Override
     public WebDriver createDriver() {

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.selenium.pom.factory.DriverManager;
 
-public class EdgeDriverManager implements DriverManager {
+public class EdgeDriverManagerAbstract implements DriverManager {
 
     @Override
     public WebDriver createDriver() {
