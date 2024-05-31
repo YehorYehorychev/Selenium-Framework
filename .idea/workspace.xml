@@ -36,7 +36,6 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +133,7 @@
       <recent name="org.selenium.pom.constants" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GuestCheckoutTest">
+  <component name="RunManager" selected="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml">
     <configuration name="C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
@@ -301,8 +300,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GuestCheckoutTest" />
         <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
+        <item itemvalue="TestNG.GuestCheckoutTest" />
         <item itemvalue="TestNG.CheckoutTest.CheckoutWithAnAccountHavingABillingAddress" />
         <item itemvalue="TestNG.CheckoutTest.LoginAndCheckoutUsingCashOnDelivery" />
         <item itemvalue="TestNG.CheckoutTest" />
