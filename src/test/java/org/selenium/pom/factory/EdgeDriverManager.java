@@ -5,17 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class EdgeDriverManager implements DriverManager {
-    private WebDriver driver;
 
     @Override
-    public void createDriver() {
+    public WebDriver createDriver() {
         WebDriverManager.edgedriver().setup();
-        driver = new EdgeDriver();
+        WebDriver driver = new EdgeDriver();
         driver.manage().window().maximize();
-    }
-
-    @Override
-    public void quitDriver() {
-        driver.quit();
+        return driver;
     }
 }
