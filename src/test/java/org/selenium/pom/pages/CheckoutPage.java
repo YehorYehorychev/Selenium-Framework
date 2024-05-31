@@ -246,7 +246,6 @@ public class CheckoutPage extends BasePage {
         int i = 5;
         while(i > 0){
             try {
-                waitForStalenessOfElement(productName);
                 return waitForElementToBeVisible(productName).getText();
             }catch (StaleElementReferenceException e){
                 System.out.println("NOT FOUND. TRYING AGAIN" + e);

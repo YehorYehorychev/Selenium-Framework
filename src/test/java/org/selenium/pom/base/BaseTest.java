@@ -4,7 +4,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.http.Cookies;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
-import org.selenium.pom.factory.DriverManager;
+import org.selenium.pom.constants.DriverType;
+import org.selenium.pom.factory.DriverManagerFactory;
+import org.selenium.pom.factory.DriverManagerOriginal;
 import org.selenium.pom.utils.CookieUtils;
 import org.testng.annotations.*;
 
@@ -17,8 +19,9 @@ public class BaseTest {
     @BeforeMethod
     public synchronized void startDriver(@Optional String browser) {
         browser = System.getProperty("browser", browser);
-//        if (browser == null) browser = "CHROME";
-        setDriver(new DriverManager().initializeDriver(browser));
+        /*if (browser == null) browser = "CHROME";
+        setDriver(new DriverManagerOriginal().initializeDriver(browser));*/
+        setDriver(DriverManagerFactory.getManager(DriverType.valueOf(browser)).createDriver());
         System.out.println("Current Thread: " + Thread.currentThread().getId() + ", " + "DRIVER = " + getDriver());
     }
 
