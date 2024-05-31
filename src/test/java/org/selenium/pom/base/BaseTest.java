@@ -7,21 +7,24 @@ import org.openqa.selenium.WebDriver;
 import org.selenium.pom.constants.DriverType;
 import org.selenium.pom.factory.DriverManagerFactory;
 import org.selenium.pom.factory.DriverManagerOriginal;
+import org.selenium.pom.factory.abstractFactory.DriverManagerFactoryAbstract;
 import org.selenium.pom.utils.CookieUtils;
 import org.testng.annotations.*;
 
 import java.util.List;
 
 public class BaseTest {
-    private ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    protected ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     @Parameters("browser")
     @BeforeMethod
     public synchronized void startDriver(@Optional String browser) {
         browser = System.getProperty("browser", browser);
-        /*if (browser == null) browser = "CHROME";
-        setDriver(new DriverManagerOriginal().initializeDriver(browser));*/
-        setDriver(DriverManagerFactory.getManager(DriverType.valueOf(browser)).createDriver());
+//        if (browser == null) browser = "CHROME";
+//        setDriver(new DriverManagerOriginal().initializeDriver(browser));
+//        setDriver(DriverManagerFactory.getManager(DriverType.valueOf(browser)).createDriver());
+        setDriver(DriverManagerFactoryAbstract.
+                getManager(DriverType.valueOf(browser)).getDriver());
         System.out.println("Current Thread: " + Thread.currentThread().getId() + ", " + "DRIVER = " + getDriver());
     }
 
