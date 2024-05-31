@@ -208,7 +208,7 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
-    private CheckoutPage waitForLoginBtnToDisappear(){
+    private CheckoutPage waitForLoginButtonToDisappear(){
         waitForInvisibilityOfElement(loginByButton);
         return this;
     }
@@ -216,7 +216,7 @@ public class CheckoutPage extends BasePage {
     public CheckoutPage login(UserData user){
         return enterUserName(user.getLogin()).
                 enterPassword(user.getPassword()).
-                clickLoginButton().waitForLoginBtnToDisappear();
+                clickLoginButton().waitForLoginButtonToDisappear();
     }
 
     public CheckoutPage selectDirectBankTransfer() {
@@ -246,6 +246,7 @@ public class CheckoutPage extends BasePage {
         int i = 5;
         while(i > 0){
             try {
+                waitForStalenessOfElement(productName);
                 return waitForElementToBeVisible(productName).getText();
             }catch (StaleElementReferenceException e){
                 System.out.println("NOT FOUND. TRYING AGAIN" + e);

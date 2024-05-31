@@ -100,6 +100,10 @@ public class BasePage {
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameElement));
     }
 
+    public void waitForStalenessOfElement(WebElement element) {
+        wait.until(ExpectedConditions.stalenessOf(element));
+    }
+
     public static void waitForPageLoad(WebDriver driver, int timeoutInSeconds) {
         ExpectedCondition<Boolean> pageLoadCondition = driver1 -> {
             assert driver1 != null;
