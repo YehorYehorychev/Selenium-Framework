@@ -10,7 +10,7 @@
             <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
         </classes>
     </test>-->
-    <test name="Chrome" thread-count="6" parallel="methods">
+    <test name="Chrome" thread-count="10" parallel="methods">
         <parameter name="browser" value="CHROME"/>
         <packages>
             <package name="org.selenium.pom.tests"/>

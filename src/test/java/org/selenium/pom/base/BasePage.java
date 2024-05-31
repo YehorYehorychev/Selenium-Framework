@@ -21,7 +21,7 @@ public class BasePage {
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        waitLong = new WebDriverWait(driver, Duration.ofSeconds(15));
+        waitLong = new WebDriverWait(driver, Duration.ofSeconds(20));
         waitShort = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         PageFactory.initElements(driver, this);
@@ -98,6 +98,10 @@ public class BasePage {
 
     public void waitForFrameToBeAvailableAndSwitchToIt(WebElement frameElement) {
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameElement));
+    }
+
+    public void waitForStalenessOfElement(WebElement element) {
+        wait.until(ExpectedConditions.stalenessOf(element));
     }
 
     public static void waitForPageLoad(WebDriver driver, int timeoutInSeconds) {

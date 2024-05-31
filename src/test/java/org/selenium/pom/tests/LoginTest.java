@@ -18,12 +18,12 @@ public class LoginTest extends BaseTest {
     @Test
     public void loginDuringCheckout() throws Exception {
         String username = "demouser" + new FakerUtils().generateRandomNumber();
-        UserData user = new UserData().
+        UserData userData = new UserData().
                 setLogin(username).
                 setPassword("demopwd").
                 setEmail(username + "@gmail.com");
         SignUpApi signUpApi = new SignUpApi();
-        signUpApi.register(user);
+        signUpApi.register(userData);
         CartApi cartApi = new CartApi(new Cookies());
         Product product = new Product(1215);
         cartApi.addToCart(product.getId(), 1);
@@ -32,30 +32,30 @@ public class LoginTest extends BaseTest {
         checkoutPage.load();
         checkoutPage.
                 clickHereToLoginLink().
-                login(user);
+                login(userData);
         Assert.assertTrue(checkoutPage.getProductName().contains(product.getName()));
     }
 
     @Test()
     public void shouldNotLoginWithAnInvalidPassword() {
         String username = "demouser" + new FakerUtils().generateRandomNumber();
-        UserData user = new UserData(username, "demopwd", username + "@gmail.com");
-        new SignUpApi().register(user);
+        UserData userData = new UserData(username, "demopwd", username + "@gmail.com");
+        new SignUpApi().register(userData);
 
         AccountPage accountPage = new AccountPage(getDriver()).load();
-        accountPage.login(user.getLogin(), "invalidPassword");
+        accountPage.login(userData.getLogin(), "invalidPassword");
         Assert.assertEquals(accountPage.getErrorTxt(), "Error: The password you entered for the username "
-                + user.getLogin() + " is incorrect. Lost your password?");
+                + userData.getLogin() + " is incorrect. Lost your password?");
     }
 
     @Test()
     public void shouldNotLoginWithANonExistingUser() {
         String username = "demouser" + new FakerUtils().generateRandomNumber();
-        UserData user = new UserData(username, "demopwd", username + "@gmail.com");
+        UserData userData = new UserData(username, "demopwd", username + "@gmail.com");
 
         AccountPage accountPage = new AccountPage(getDriver()).load();
-        accountPage.login(user.getLogin(), "demopwd");
-        Assert.assertEquals(accountPage.getErrorTxt(), "Error: The username " + user.getLogin() +
+        accountPage.login(userData.getLogin(), "demopwd");
+        Assert.assertEquals(accountPage.getErrorTxt(), "Error: The username " + userData.getLogin() +
                 " is not registered on this site." +
                 " If you are unsure of your username, try your email address instead.");
     }
