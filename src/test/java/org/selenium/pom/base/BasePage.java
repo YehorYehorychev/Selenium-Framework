@@ -12,6 +12,7 @@ import org.selenium.pom.utils.ConfigLoader;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 public class BasePage {
     protected WebDriver driver;
@@ -110,5 +111,28 @@ public class BasePage {
             return ((JavascriptExecutor) driver1).executeScript("return document.readyState").equals("complete");
         };
         new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds)).until(pageLoadCondition);
+    }
+
+    public void scrollToElement(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    public void switchToNewTab() {
+        String currentWindow = driver.getWindowHandle();
+        Set<String> allWindows = driver.getWindowHandles();
+        for (String window : allWindows) {
+            if (!window.equals(currentWindow)) {
+                driver.switchTo().window(window);
+            }
+        }
+    }
+
+    public boolean isElementDisplayed(WebElement element) {
+        try {
+            return element.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 }
