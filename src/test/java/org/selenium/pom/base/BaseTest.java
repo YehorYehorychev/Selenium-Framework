@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.selenium.pom.constants.DriverType;
 import org.selenium.pom.factory.DriverManagerFactory;
 import org.selenium.pom.factory.DriverManagerOriginal;
+import org.selenium.pom.factory.abstractFactory.DriverManagerAbstract;
 import org.selenium.pom.factory.abstractFactory.DriverManagerFactoryAbstract;
 import org.selenium.pom.utils.CookieUtils;
 import org.testng.annotations.*;
@@ -14,6 +15,7 @@ import org.testng.annotations.*;
 import java.util.List;
 
 public class BaseTest {
+    protected ThreadLocal<DriverManagerAbstract> driverManager = new ThreadLocal<>();
     protected ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     @Parameters("browser")
@@ -23,14 +25,16 @@ public class BaseTest {
 //        if (browser == null) browser = "CHROME";
 //        setDriver(new DriverManagerOriginal().initializeDriver(browser));
 //        setDriver(DriverManagerFactory.getManager(DriverType.valueOf(browser)).createDriver());
-        setDriver(DriverManagerFactoryAbstract.
-                getManager(DriverType.valueOf(browser)).getDriver());
+        setDriverManager(DriverManagerFactoryAbstract.
+                getManager(DriverType.valueOf(browser)));
+        setDriver(getDriverManager().getDriver());
         System.out.println("Current Thread: " + Thread.currentThread().getId() + ", " + "DRIVER = " + getDriver());
     }
 
     @AfterMethod
     public synchronized void quitDriver() {
-        getDriver().quit();
+//        getDriver().quit();
+        getDriverManager().getDriver().quit();
     }
 
     @AfterClass
@@ -43,6 +47,14 @@ public class BaseTest {
         for (Cookie cookie : seleniumCookies) {
             getDriver().manage().addCookie(cookie);
         }
+    }
+
+    protected DriverManagerAbstract getDriverManager() {
+        return this.driverManager.get();
+    }
+
+    private void setDriverManager(DriverManagerAbstract driverManager) {
+        this.driverManager.set(driverManager);
     }
 
     protected WebDriver getDriver() {
