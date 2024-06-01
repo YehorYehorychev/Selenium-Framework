@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -134,5 +135,54 @@ public class BasePage {
         } catch (Exception e) {
             return false;
         }
+    }
+
+    public void doubleClick(WebElement element) {
+        Actions actions = new Actions(driver);
+        actions.doubleClick(element).perform();
+    }
+
+    public void hoverOverElement(WebElement element) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).perform();
+    }
+
+    public void dragAndDrop(WebElement source, WebElement target) {
+        Actions actions = new Actions(driver);
+        actions.dragAndDrop(source, target).perform();
+    }
+
+    public void rightClick(WebElement element) {
+        Actions actions = new Actions(driver);
+        actions.contextClick(element).perform();
+    }
+
+    public boolean isTextPresent(String text) {
+        return driver.getPageSource().contains(text);
+    }
+
+    public void uploadFile(WebElement element, String filePath) {
+        element.sendKeys(filePath);
+    }
+
+    public void scrollBy(int xPixels, int yPixels) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(arguments[0], arguments[1]);", xPixels, yPixels);
+    }
+
+    public void acceptAlert() {
+        driver.switchTo().alert().accept();
+    }
+
+    public void dismissAlert() {
+        driver.switchTo().alert().dismiss();
+    }
+
+    public String getAlertText() {
+        return driver.switchTo().alert().getText();
+    }
+
+    public void sendKeysToAlert(String text) {
+        driver.switchTo().alert().sendKeys(text);
     }
 }
