@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class AddToCartTest extends BaseTest {
-    @Test
+    @Test(description = "Should be able to add product to cart from store page")
     public void addToCartFromStorePage() throws IOException {
         Product product = new Product(1215);
         CartPage cartPage = new StorePage(getDriver()).
@@ -24,8 +24,8 @@ public class AddToCartTest extends BaseTest {
         Assert.assertEquals(cartPage.getProductName(), product.getName());
     }
 
-    @Test(dataProvider = "getFeaturedProducts", dataProviderClass = MyDataProvider.class)
-    public void addToCartFeaturedProducts(Product product){
+    @Test(dataProvider = "getFeaturedProducts", dataProviderClass = MyDataProvider.class, description = "Should be able to add featured products to cart from home page")
+    public void addToCartFeaturedProducts(Product product) {
         CartPage cartPage = new HomePage(getDriver()).load().
                 getProductThumbnail().
                 clickAddToCartButton(product.getName()).
@@ -33,13 +33,13 @@ public class AddToCartTest extends BaseTest {
         Assert.assertEquals(cartPage.getProductName(), product.getName());
     }
 
-    @Test()
+    @Test(description = "Should be able to add product to cart from product page")
     public void AddToCartFromProductPage() throws IOException {
         Product product = new Product(1215);
         String productNameSeparatedByDash = product.getName().toLowerCase().replaceAll(" ", "-");
 
         ProductPage productPage = new ProductPage(getDriver()).loadProduct(productNameSeparatedByDash).
                 addToCart();
-        Assert.assertTrue(productPage.getAlert().contains("“" + product.getName() +"” has been added to your cart."));
+        Assert.assertTrue(productPage.getAlert().contains("“" + product.getName() + "” has been added to your cart."));
     }
 }

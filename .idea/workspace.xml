@@ -37,6 +37,31 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/08e710fe-dfd2-47cd-98a6-5ec0255e2679-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/09a0f3c9-0127-44d6-a333-237b9a4c0785-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0cc790ae-7173-410b-b9ab-4f71d541d852-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1fa3fe26-3d2e-4cb6-8490-6cce62c6afa1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/20f10280-5023-4fd1-93b1-93c0872a3d6b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/27198214-47d3-496a-901a-63c2e9f1a92b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2be39800-2c97-4c13-b2d9-4ef704f5332b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2c63b3fa-ea20-41e5-97f7-2f62d6865dc9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3021e44e-84b4-45d6-83d6-9bb1bead6c9a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4e5a6e78-8018-47de-8141-fc7f4e10cbbe-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/69b75b0e-01d2-41bc-93d9-a9acbec47d34-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6bdcb3f6-c62b-4758-9e04-8d4bb3eb4704-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6ceea966-828d-478c-9d53-dac0b2d18729-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/916bccec-3094-4537-b5ee-ed4f0b06d234-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b0518559-20f7-481a-bbbe-1cacd3762bf7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c436864b-7307-4be9-8728-f7bf22bb8bd1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/cc916c43-d1c3-40fd-95b6-121253c5afa2-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d4c06d07-f2d8-49a4-9066-2e076da15188-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/dcd8497a-507f-4286-aeb8-769f6efb8f25-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e561f479-5709-468c-8ddb-1a0dd656e2de-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ecaf0193-2d3f-4623-9804-505e539c69d1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ee32705c-d81b-437b-96a6-df855d782a19-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/fc3781b4-6fae-46ec-ad60-b3b5cf504b28-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/fe031f3e-957e-4cd2-8e91-18d1f2380fbe-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/AddToCartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,49 +105,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DummyClass.executor": "Run",
-    "Application.Pal.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.AddToCart.addToCartFromStorePage.executor": "Run",
-    "TestNG.AddToCartTest.AddToCartFromProductPage.executor": "Run",
-    "TestNG.AddToCartTest.addToCartFeaturedProducts.executor": "Run",
-    "TestNG.AddToCartTest.addToCartFromStorePage.executor": "Run",
-    "TestNG.AddToCartTest.executor": "Run",
-    "TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml (1).executor": "Run",
-    "TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml.executor": "Run",
-    "TestNG.CheckoutTest.CheckoutWithAnAccountHavingABillingAddress.executor": "Run",
-    "TestNG.CheckoutTest.GuestCheckoutUsingCashOnDelivery.executor": "Run",
-    "TestNG.CheckoutTest.GuestCheckoutUsingDirectBankTransfer.executor": "Run",
-    "TestNG.CheckoutTest.LoginAndCheckoutUsingCashOnDelivery.executor": "Run",
-    "TestNG.CheckoutTest.LoginAndCheckoutUsingDirectBankTransfer.executor": "Run",
-    "TestNG.CheckoutTest.executor": "Run",
-    "TestNG.CheckoutTest.guestCheckoutUsingDirectBankTransfer.executor": "Run",
-    "TestNG.CheckoutTest.loginAndCheckoutUsingDirectBankTransfer.executor": "Run",
-    "TestNG.GuestCheckoutTest.executor": "Run",
-    "TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (1).executor": "Run",
-    "TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (2).executor": "Run",
-    "TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer.executor": "Run",
-    "TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer (1).executor": "Run",
-    "TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer.executor": "Run",
-    "TestNG.LoginTest.executor": "Run",
-    "TestNG.LoginTest.loginDuringCheckout.executor": "Run",
-    "TestNG.MyFirstTestCase.dummyTest.executor": "Run",
-    "TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu.executor": "Run",
-    "TestNG.NavigationTest.executor": "Run",
-    "TestNG.SearchTest.executor": "Run",
-    "TestNG.SearchTest.searchWithPartialMatch.executor": "Run",
-    "TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer.executor": "Run",
-    "git-widget-placeholder": "AllureReports",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/egory/IdeaProjects/Selenium-Framework/src/test/java/org/selenium/pom/factory/abstractFactory",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.updates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DummyClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Pal.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.AddToCart.addToCartFromStorePage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddToCartTest.AddToCartFromProductPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddToCartTest.addToCartFeaturedProducts.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddToCartTest.addToCartFromStorePage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddToCartTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CheckoutTest.CheckoutWithAnAccountHavingABillingAddress.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CheckoutTest.GuestCheckoutUsingCashOnDelivery.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CheckoutTest.GuestCheckoutUsingDirectBankTransfer.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CheckoutTest.LoginAndCheckoutUsingCashOnDelivery.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CheckoutTest.LoginAndCheckoutUsingDirectBankTransfer.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CheckoutTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CheckoutTest.guestCheckoutUsingDirectBankTransfer.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CheckoutTest.loginAndCheckoutUsingDirectBankTransfer.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GuestCheckoutTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GuestCheckoutTest.guestCheckoutUsingDirectBankTransfer.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GuestCheckoutTest.loginToExistingAccountAndCheckoutUsingDirectBankTransfer.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginDuringCheckout.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MyFirstTestCase.dummyTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NavigationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SearchTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SearchTest.searchWithPartialMatch.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;AllureReports&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/egory/IdeaProjects/Selenium-Framework/src/test/java/org/selenium/pom/factory/abstractFactory&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.selenium.pom.pages" />
@@ -139,7 +164,7 @@
       <recent name="org.selenium.pom.factory.abstractFactory" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddToCartTest">
+  <component name="RunManager" selected="TestNG.AddToCartTest.addToCartFromStorePage">
     <configuration name="AddToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
@@ -306,8 +331,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddToCartTest" />
         <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
+        <item itemvalue="TestNG.AddToCartTest" />
         <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
         <item itemvalue="TestNG.GuestCheckoutTest" />
         <item itemvalue="TestNG.CheckoutTest.LoginAndCheckoutUsingCashOnDelivery" />
