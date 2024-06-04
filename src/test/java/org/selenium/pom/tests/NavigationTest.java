@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class NavigationTest extends BaseTest {
 
-    @Test
+    @Test(description = "Should navigate from home to store using the main menu")
     public void NavigateFromHomeToStoreUsingMainMenu() {
         StorePage storePage = new HomePage(getDriver()).
                 load().
@@ -21,7 +21,7 @@ public class NavigationTest extends BaseTest {
         Assert.assertEquals(storePage.getTitle(), "Store");
     }
 
-    @Test
+    @Test(description = "Should navigate from store to the product page")
     public void NavigateFromStoreToTheProduct() throws IOException {
         Product product = new Product(1215);
         ProductPage productPage = new StorePage(getDriver()).
@@ -30,7 +30,7 @@ public class NavigationTest extends BaseTest {
         Assert.assertEquals(productPage.getProductTitle(), product.getName());
     }
 
-    @Test()
+    @Test(description = "Should navigate from home to the featured product page")
     public void NavigateFromHomeToTheFeaturedProduct() throws IOException {
         Product product = new Product(1215);
         ProductPage productPage = new HomePage(getDriver()).

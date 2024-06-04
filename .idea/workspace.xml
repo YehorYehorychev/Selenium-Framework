@@ -36,32 +36,14 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/08e710fe-dfd2-47cd-98a6-5ec0255e2679-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/09a0f3c9-0127-44d6-a333-237b9a4c0785-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/0cc790ae-7173-410b-b9ab-4f71d541d852-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1fa3fe26-3d2e-4cb6-8490-6cce62c6afa1-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/20f10280-5023-4fd1-93b1-93c0872a3d6b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/27198214-47d3-496a-901a-63c2e9f1a92b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2be39800-2c97-4c13-b2d9-4ef704f5332b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2c63b3fa-ea20-41e5-97f7-2f62d6865dc9-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/3021e44e-84b4-45d6-83d6-9bb1bead6c9a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4e5a6e78-8018-47de-8141-fc7f4e10cbbe-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/69b75b0e-01d2-41bc-93d9-a9acbec47d34-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6bdcb3f6-c62b-4758-9e04-8d4bb3eb4704-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6ceea966-828d-478c-9d53-dac0b2d18729-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/916bccec-3094-4537-b5ee-ed4f0b06d234-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b0518559-20f7-481a-bbbe-1cacd3762bf7-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c436864b-7307-4be9-8728-f7bf22bb8bd1-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/cc916c43-d1c3-40fd-95b6-121253c5afa2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d4c06d07-f2d8-49a4-9066-2e076da15188-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/dcd8497a-507f-4286-aeb8-769f6efb8f25-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e561f479-5709-468c-8ddb-1a0dd656e2de-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ecaf0193-2d3f-4623-9804-505e539c69d1-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ee32705c-d81b-437b-96a6-df855d782a19-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/fc3781b4-6fae-46ec-ad60-b3b5cf504b28-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/fe031f3e-957e-4cd2-8e91-18d1f2380fbe-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/AddToCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2be49c99-58da-4988-be6d-269dee146d8d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/45635c4a-4250-4bfd-a18a-0f7ceb85dd07-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6a6c5f7b-3efd-464d-84fc-c93793a3c876-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b5e4a57a-33b0-43cb-8364-520220252f18-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/bb61f4d7-f3e3-49dd-9b13-a3244fb50f7b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/db25cb91-4aab-4da4-a17f-0e52d21c05e7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/CheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/GuestCheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/GuestCheckoutTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

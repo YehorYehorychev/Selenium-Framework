@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class GuestCheckoutTest extends BaseTest {
 
-    @Test
+    @Test(description = "Should allow guest checkout using direct bank transfer after searching for a product")
     public void guestCheckoutUsingDirectBankTransfer() throws IOException {
         String searchFor = "Blue";
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
@@ -41,7 +41,7 @@ public class GuestCheckoutTest extends BaseTest {
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 
-    @Test
+    @Test(description = "Should allow login to existing account and checkout using direct bank transfer after searching for a product")
     public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws IOException {
         String searchFor = "Blue";
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
