@@ -13,7 +13,11 @@ import org.selenium.pom.factory.abstractFactory.DriverManagerFactoryAbstract;
 import org.selenium.pom.utils.CookieUtils;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
+import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -41,7 +45,8 @@ public class BaseTest {
         if (result.getStatus() == ITestResult.FAILURE) {
             File destFile = new File("screenshots" + File.separator + browser + File.separator +
                     result.getTestClass().getRealClass().getSimpleName() + "_" + result.getMethod().getMethodName() + ".png");
-            takeScreenshot(destFile);
+//            takeScreenshot(destFile);
+            takeScreenshotUsingAshot(destFile);
         }
         getDriverManager().getDriver().quit();
     }
@@ -78,5 +83,16 @@ public class BaseTest {
         TakesScreenshot takesScreenshot = (TakesScreenshot) getDriver();
         File srcFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(srcFile, destFile);
+    }
+
+    private void takeScreenshotUsingAshot(File destFile) {
+        Screenshot screenshot = new AShot()
+                .shootingStrategy(ShootingStrategies.viewportPasting(100))
+                .takeScreenshot(getDriver());
+        try {
+            ImageIO.write(screenshot.getImage(), "PNG", destFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
