@@ -37,8 +37,7 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/CHROME/AddToCartTest_addToCartFromStorePage.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/CHROME/AddToCartTest_addToCartFromStorePage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +115,7 @@
     "TestNG.SearchTest.executor": "Run",
     "TestNG.SearchTest.searchWithPartialMatch.executor": "Run",
     "TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer.executor": "Run",
-    "git-widget-placeholder": "Screenshots",
+    "git-widget-placeholder": "AllureReports",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/egory/IdeaProjects/Selenium-Framework/src/test/java/org/selenium/pom/factory/abstractFactory",
     "project.structure.last.edited": "Modules",
