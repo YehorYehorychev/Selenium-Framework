@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class LoginTest extends BaseTest {
-    @Test
+    @Test(description = "Should allow login during checkout")
     public void loginDuringCheckout() throws Exception {
         String username = "demouser" + new FakerUtils().generateRandomNumber();
         UserData userData = new UserData().
@@ -36,7 +36,7 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(checkoutPage.getProductName().contains(product.getName()));
     }
 
-    @Test()
+    @Test(description = "Should not allow login with an invalid password")
     public void shouldNotLoginWithAnInvalidPassword() {
         String username = "demouser" + new FakerUtils().generateRandomNumber();
         UserData userData = new UserData(username, "demopwd", username + "@gmail.com");
@@ -48,7 +48,7 @@ public class LoginTest extends BaseTest {
                 + userData.getLogin() + " is incorrect. Lost your password?");
     }
 
-    @Test()
+    @Test(description = "Should not allow login with a non-existing user")
     public void shouldNotLoginWithANonExistingUser() {
         String username = "demouser" + new FakerUtils().generateRandomNumber();
         UserData userData = new UserData(username, "demopwd", username + "@gmail.com");

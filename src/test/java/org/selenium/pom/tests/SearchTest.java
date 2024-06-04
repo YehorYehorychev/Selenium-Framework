@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class SearchTest extends BaseTest {
 
-    @Test
+    @Test(description = "Should search with a partial match")
     public void searchWithPartialMatch(){
         String searchFor = "Blue";
         StorePage storePage = new StorePage(getDriver()).
@@ -21,7 +21,7 @@ public class SearchTest extends BaseTest {
         Assert.assertEquals(storePage.getTitle(), "Search results: “" + searchFor + "”");
     }
 
-    @Test
+    @Test(description = "Should search with an exact match")
     public void searchWithExactMatch() throws IOException {
         Product product = new Product(1215);
         ProductPage productPage = new StorePage(getDriver()).
@@ -30,7 +30,7 @@ public class SearchTest extends BaseTest {
         Assert.assertEquals(productPage.getProductTitle(),product.getName());
     }
 
-    @Test
+    @Test(description = "Should search for a non-existing product")
     public void SearchForNonExistingProduct() {
         StorePage storePage = new StorePage(getDriver()).
                 load().

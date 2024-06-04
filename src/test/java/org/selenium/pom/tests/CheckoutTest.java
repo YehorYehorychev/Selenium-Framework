@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class CheckoutTest extends BaseTest {
-    @Test
+    @Test(description = "Should allow guest checkout using direct bank transfer")
     public void GuestCheckoutUsingDirectBankTransfer() throws IOException, InterruptedException {
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
         CheckoutPage checkoutPage = new CheckoutPage(getDriver()).load();
@@ -31,7 +31,7 @@ public class CheckoutTest extends BaseTest {
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 
-    @Test
+    @Test(description = "Should allow login and checkout using direct bank transfer")
     public void LoginAndCheckoutUsingDirectBankTransfer() throws IOException, InterruptedException {
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
         String username = "demouser" + new FakerUtils().generateRandomNumber();
@@ -53,7 +53,7 @@ public class CheckoutTest extends BaseTest {
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 
-    @Test
+    @Test(description = "Should allow guest checkout using cash on delivery")
     public void GuestCheckoutUsingCashOnDelivery() throws IOException, InterruptedException {
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
         CheckoutPage checkoutPage = new CheckoutPage(getDriver()).load();
@@ -69,7 +69,7 @@ public class CheckoutTest extends BaseTest {
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 
-    @Test
+    @Test(description = "Should allow login and checkout using cash on delivery")
     public void LoginAndCheckoutUsingCashOnDelivery() throws IOException, InterruptedException {
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
         String username = "demouser" + new FakerUtils().generateRandomNumber();
@@ -90,7 +90,7 @@ public class CheckoutTest extends BaseTest {
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 
-    @Test
+    @Test(description = "Should allow checkout with an account having a billing address")
     public void CheckoutWithAnAccountHavingABillingAddress() throws IOException {
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
         String username = "demouser" + new FakerUtils().generateRandomNumber();
