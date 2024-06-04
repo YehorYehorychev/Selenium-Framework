@@ -2,7 +2,10 @@ package org.selenium.pom.base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.http.Cookies;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Cookie;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.selenium.pom.constants.DriverType;
 import org.selenium.pom.factory.abstractFactory.DriverManagerAbstract;
@@ -12,6 +15,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 public class BaseTest {
@@ -33,11 +37,11 @@ public class BaseTest {
 
     @Parameters("browser")
     @AfterMethod
-    public synchronized void quitDriver(@Optional String browser, ITestResult result) {
-//        getDriver().quit();
+    public synchronized void quitDriver(@Optional String browser, ITestResult result) throws IOException {
         if (result.getStatus() == ITestResult.FAILURE) {
-            File destFile = new File("scr" + File.separator + browser + File.separator +
+            File destFile = new File("screenshots" + File.separator + browser + File.separator +
                     result.getTestClass().getRealClass().getSimpleName() + "_" + result.getMethod().getMethodName() + ".png");
+            takeScreenshot(destFile);
         }
         getDriverManager().getDriver().quit();
     }
@@ -68,5 +72,11 @@ public class BaseTest {
 
     private void setDriver(WebDriver driver) {
         this.driver.set(driver);
+    }
+
+    private void takeScreenshot(File destFile) throws IOException {
+        TakesScreenshot takesScreenshot = (TakesScreenshot) getDriver();
+        File srcFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(srcFile, destFile);
     }
 }
