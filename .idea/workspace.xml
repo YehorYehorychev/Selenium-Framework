@@ -146,7 +146,7 @@
       <recent name="org.selenium.pom.factory.abstractFactory" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddToCartTest.addToCartFromStorePage">
+  <component name="RunManager" selected="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml">
     <configuration name="AddToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
@@ -313,9 +313,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
         <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
         <item itemvalue="TestNG.AddToCartTest" />
-        <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
         <item itemvalue="TestNG.GuestCheckoutTest" />
         <item itemvalue="TestNG.CheckoutTest.LoginAndCheckoutUsingCashOnDelivery" />
       </list>
