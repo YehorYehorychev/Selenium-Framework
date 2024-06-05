@@ -1,5 +1,6 @@
 package org.selenium.pom.tests;
 
+import io.qameta.allure.Description;
 import org.selenium.pom.base.BaseTest;
 import org.selenium.pom.objects.BillingAddress;
 import org.selenium.pom.objects.Product;
@@ -16,6 +17,7 @@ import java.io.IOException;
 
 public class GuestCheckoutTest extends BaseTest {
 
+    @Description("Checkout using direct bank transfer using a guest account")
     @Test(description = "Should allow guest checkout using direct bank transfer after searching for a product")
     public void guestCheckoutUsingDirectBankTransfer() throws IOException {
         String searchFor = "Blue";
@@ -41,6 +43,7 @@ public class GuestCheckoutTest extends BaseTest {
         Assert.assertEquals(checkoutPage.getNotice(), "Thank you. Your order has been received.");
     }
 
+    @Description("Checkout using direct bank transfer using a existing account")
     @Test(description = "Should allow login to existing account and checkout using direct bank transfer after searching for a product")
     public void loginToExistingAccountAndCheckoutUsingDirectBankTransfer() throws IOException {
         String searchFor = "Blue";
