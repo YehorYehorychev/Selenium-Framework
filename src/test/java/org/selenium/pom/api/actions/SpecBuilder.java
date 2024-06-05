@@ -1,5 +1,6 @@
 package org.selenium.pom.api.actions;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
@@ -11,6 +12,7 @@ public class SpecBuilder {
     public static RequestSpecification getRequestSpec() {
         return new RequestSpecBuilder().
                 setBaseUri(ConfigLoader.getInstance().getBaseUrl()).
+                addFilter(new AllureRestAssured()).
                 log(LogDetail.ALL).
                 build();
     }

@@ -1,0 +1,1 @@
+{"uuid":"58457298-ea5b-48f9-9e8f-d41e34ead0bf","name":"org.selenium.pom.tests.LoginTest","children":["4ed4ee1f-03e1-49e1-bd73-d3eda5fb5420"],"befores":[],"afters":[{"name":"tearDownClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1717547529773,"stop":1717547529776}],"start":1717547516982,"stop":1717547529777}

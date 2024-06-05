@@ -1,5 +1,6 @@
 package org.selenium.pom.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -150,6 +151,7 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
+    @Step
     public CheckoutPage setBillingAddress(BillingAddress billingAddress) {
         return enterFirstName(billingAddress.getFirstName())
                 .enterLastName(billingAddress.getLastName())
@@ -161,10 +163,12 @@ public class CheckoutPage extends BasePage {
                 .enterEmail(billingAddress.getEmail());
     }
 
+    @Step
     public CheckoutPage setUserCredentials(UserData userData) {
         return enterUserCredentials(userData.getLogin(), userData.getPassword());
     }
 
+    @Step
     public CheckoutPage placeOrder() {
         waitForOverlaysToDisappear(overlay);
         waitForElementToBeClickable(placeOrderButton).click();
@@ -175,6 +179,7 @@ public class CheckoutPage extends BasePage {
         return waitForElementToBeVisible(successNotice).getText();
     }
 
+    @Step
     public CheckoutPage clickHereToLoginLink() {
         waitForElementToBeClickable(clickHereToLoginLink).click();
         waitForElementToBeVisible(lostYourPasswordButton);
@@ -219,6 +224,7 @@ public class CheckoutPage extends BasePage {
                 clickLoginButton().waitForLoginButtonToDisappear();
     }
 
+    @Step
     public CheckoutPage selectDirectBankTransfer() {
         waitForElementToBeClickable(directBankTransferRadioButton);
         if (!directBankTransferRadioButton.isSelected()) {

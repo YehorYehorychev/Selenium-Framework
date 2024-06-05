@@ -1,5 +1,6 @@
 package org.selenium.pom.pages.components;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,6 +14,7 @@ public class MyHeader extends BasePage {
         super(driver);
     }
 
+    @Step
     public StorePage navigateToStoreUsingMenu() {
         wait.until(ExpectedConditions.elementToBeClickable(storeMenuLink)).click();
         return new StorePage(driver);

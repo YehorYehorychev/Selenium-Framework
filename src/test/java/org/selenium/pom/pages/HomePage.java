@@ -1,5 +1,6 @@
 package org.selenium.pom.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,6 +20,7 @@ public class HomePage extends BasePage {
     private final MyHeader myHeader;
     private final ProductThumbnail productThumbnail;
 
+    @Step
     public MyHeader getMyHeader() {
         return myHeader;
     }
@@ -38,6 +40,7 @@ public class HomePage extends BasePage {
         return new ProductPage(driver);
     }
 
+    @Step
     public HomePage load() {
         load("/");
 //        waitForTitleToContain("AskOmDch"); // Uncomment if title check is needed

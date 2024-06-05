@@ -36,14 +36,9 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2be49c99-58da-4988-be6d-269dee146d8d-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/45635c4a-4250-4bfd-a18a-0f7ceb85dd07-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6a6c5f7b-3efd-464d-84fc-c93793a3c876-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b5e4a57a-33b0-43cb-8364-520220252f18-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/bb61f4d7-f3e3-49dd-9b13-a3244fb50f7b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/db25cb91-4aab-4da4-a17f-0e52d21c05e7-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/CheckoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/GuestCheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/GuestCheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/SpecBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/api/actions/SpecBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +141,7 @@
       <recent name="org.selenium.pom.factory.abstractFactory" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml">
+  <component name="RunManager" selected="TestNG.LoginTest.loginDuringCheckout">
     <configuration name="AddToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
@@ -226,35 +221,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckoutTest.LoginAndCheckoutUsingCashOnDelivery" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MasterSeleniumFramework" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.selenium.pom.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.CheckoutTest" />
-      <option name="METHOD_NAME" value="LoginAndCheckoutUsingCashOnDelivery" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GuestCheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
@@ -270,6 +236,35 @@
       <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.GuestCheckoutTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginDuringCheckout" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MasterSeleniumFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.selenium.pom.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.LoginTest" />
+      <option name="METHOD_NAME" value="loginDuringCheckout" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
@@ -305,19 +300,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
       <item itemvalue="TestNG.AddToCartTest" />
       <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
       <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
-      <item itemvalue="TestNG.CheckoutTest.LoginAndCheckoutUsingCashOnDelivery" />
       <item itemvalue="TestNG.GuestCheckoutTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
         <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
+        <item itemvalue="TestNG.GuestCheckoutTest" />
         <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
         <item itemvalue="TestNG.AddToCartTest" />
-        <item itemvalue="TestNG.GuestCheckoutTest" />
-        <item itemvalue="TestNG.CheckoutTest.LoginAndCheckoutUsingCashOnDelivery" />
       </list>
     </recent_temporary>
   </component>
