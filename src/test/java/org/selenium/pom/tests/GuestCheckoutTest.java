@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 @Epic("Ecommerce shop 2.0")
-@Feature("Checkout process testing")
+@Feature("Checkout process using different preconditions")
 public class GuestCheckoutTest extends BaseTest {
 
     @Story("Guest checkout")
