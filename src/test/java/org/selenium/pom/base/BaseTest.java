@@ -28,7 +28,7 @@ public class BaseTest {
 
     @Parameters("browser")
     @BeforeMethod
-    public synchronized void startDriver(@Optional String browser) {
+    public synchronized void startDriver(@Optional("CHROME") String browser) {
         browser = System.getProperty("browser", browser);
         if (browser == null) {
             throw new IllegalArgumentException("Browser name should not be null");

@@ -1,0 +1,1 @@
+{"uuid":"5dbc5e74-9380-45ee-a7a8-be57a8537b16","name":"org.selenium.pom.tests.NavigationTest","children":["26ee5fac-7654-460c-aa5c-f12b93006a6f"],"befores":[],"afters":[{"name":"tearDownClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1717553604259,"stop":1717553604262}],"start":1717553600931,"stop":1717553604264}
