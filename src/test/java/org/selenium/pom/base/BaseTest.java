@@ -30,6 +30,9 @@ public class BaseTest {
     @BeforeMethod
     public synchronized void startDriver(@Optional String browser) {
         browser = System.getProperty("browser", browser);
+        if (browser == null) {
+            throw new IllegalArgumentException("Browser name should not be null");
+        }
 //        if (browser == null) browser = "CHROME";
 //        setDriver(new DriverManagerOriginal().initializeDriver(browser));
 //        setDriver(DriverManagerFactory.getManager(DriverType.valueOf(browser)).createDriver());
