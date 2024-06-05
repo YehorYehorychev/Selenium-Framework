@@ -1,6 +1,8 @@
 package org.selenium.pom.tests;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.selenium.pom.base.BaseTest;
 import org.selenium.pom.objects.BillingAddress;
 import org.selenium.pom.objects.Product;
@@ -15,6 +17,8 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+@Epic("Ecommerce shop 2.0")
+@Feature("Checkout process testing")
 public class GuestCheckoutTest extends BaseTest {
 
     @Description("Checkout using direct bank transfer using a guest account")
