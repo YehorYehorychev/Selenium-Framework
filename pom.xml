@@ -25,19 +25,12 @@
                 <configuration>
                     <parallel>methods</parallel>
                     <threadCount>6</threadCount>
-                    <!--                    <suiteXmlFiles>
-                                            <suiteXmlFile>${suiteFile}</suiteXmlFile>
-                                        </suiteXmlFiles>-->
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
-                <configuration>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
+                    <!--<suiteXmlFiles>
+                        <suiteXmlFile>${suiteFile}</suiteXmlFile>
+                    </suiteXmlFiles>-->
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -49,6 +42,7 @@
             </plugin>
         </plugins>
     </build>
+
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
