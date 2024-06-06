@@ -36,7 +36,9 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/selenium/MyFirstTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/dataproviders/MyDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/dataproviders/MyDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/CheckoutEnd2EndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/CheckoutEnd2EndTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,6 +95,7 @@
     "TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml (1).executor": "Run",
     "TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml.executor": "Run",
     "TestNG.CheckoutEnd2EndTest.executor": "Run",
+    "TestNG.CheckoutEnd2EndTest.guestCheckoutUsingDirectBankTransfer.executor": "Run",
     "TestNG.CheckoutTest.CheckoutWithAnAccountHavingABillingAddress.executor": "Run",
     "TestNG.CheckoutTest.GuestCheckoutUsingCashOnDelivery.executor": "Run",
     "TestNG.CheckoutTest.GuestCheckoutUsingDirectBankTransfer.executor": "Run",
@@ -117,7 +120,7 @@
     "TestNG.myFirstTestCase.guestCheckoutUsingDirectBankTransfer.executor": "Run",
     "git-widget-placeholder": "Improvements",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/egory/IdeaProjects/Selenium-Framework/src/test/java/org/selenium/pom/factory/abstractFactory",
+    "last_opened_file_path": "C:/Users/egory/IdeaProjects/Selenium-Framework/src/test/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -129,8 +132,8 @@
       <recent name="org.selenium.pom.pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\egory\IdeaProjects\Selenium-Framework\src\test\java\org\selenium\pom\factory\abstractFactory" />
       <recent name="C:\Users\egory\IdeaProjects\Selenium-Framework\src\test\resources" />
+      <recent name="C:\Users\egory\IdeaProjects\Selenium-Framework\src\test\java\org\selenium\pom\factory\abstractFactory" />
       <recent name="C:\Users\egory\IdeaProjects\Selenium-Framework" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
