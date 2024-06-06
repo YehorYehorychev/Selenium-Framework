@@ -23,6 +23,7 @@ To get started with my Selenium Framework, follow these simple steps:
 ## Prerequisites: 📋
 - Java 17: Make sure you have Java 17 installed. You can download it from the official site.
 - Maven: Ensure Maven is installed. You can download it from the official site.
+
 With these features, my Java Selenium Framework provides a robust and efficient solution for all your web application testing needs. Happy Testing! 🎉
 
 ## Running Tests: 🚀
