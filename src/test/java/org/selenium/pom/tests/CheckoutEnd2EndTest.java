@@ -20,7 +20,7 @@ import java.io.IOException;
 
 @Epic("Ecommerce shop 2.0")
 @Feature("Checkout process using different preconditions")
-public class GuestCheckoutTest extends BaseTest {
+public class CheckoutEnd2EndTest extends BaseTest {
 
     @Story("Guest checkout")
     @Description("Checkout using direct bank transfer using a guest account")
