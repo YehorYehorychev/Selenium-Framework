@@ -7,7 +7,7 @@
 <!--    <test name="Firefox" thread-count="2" parallel="methods">
         <parameter name="browser" value="FIREFOX"/>
         <classes>
-            <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
+            <class name="org.selenium.pom.tests.CheckoutEnd2EndTest"/>
         </classes>
     </test>-->
     <test name="Chrome" thread-count="10" parallel="methods">
@@ -19,7 +19,7 @@
 <!--    <test name="Edge" thread-count="2" parallel="methods">
         <parameter name="browser" value="EDGE"/>
         <classes>
-            <class name="org.selenium.pom.tests.GuestCheckoutTest"/>
+            <class name="org.selenium.pom.tests.CheckoutEnd2EndTest"/>
         </classes>
     </test>-->
 </suite>

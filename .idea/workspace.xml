@@ -37,6 +37,7 @@
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/Selenium-Framework" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MasterSeleniumFramework/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oop-lesson-15/task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +140,7 @@
       <recent name="org.selenium.pom.factory.abstractFactory" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu">
+  <component name="RunManager" selected="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml">
     <configuration name="AddToCartTest.addToCartFromStorePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
@@ -191,7 +192,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuestCheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckoutEnd2EndTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -203,7 +204,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.GuestCheckoutTest" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.CheckoutEnd2EndTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
@@ -299,18 +300,18 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.CheckoutEnd2EndTest" />
       <item itemvalue="TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu" />
       <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
       <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
-      <item itemvalue="TestNG.GuestCheckoutTest" />
       <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu" />
         <item itemvalue="TestNG.C:/Users/egory/IdeaProjects/Selenium-Framework/testng.xml" />
+        <item itemvalue="TestNG.CheckoutEnd2EndTest" />
         <item itemvalue="TestNG.LoginTest.loginDuringCheckout" />
-        <item itemvalue="TestNG.GuestCheckoutTest" />
+        <item itemvalue="TestNG.NavigationTest.NavigateFromHomeToStoreUsingMainMenu" />
         <item itemvalue="TestNG.AddToCartTest.addToCartFromStorePage" />
       </list>
     </recent_temporary>
