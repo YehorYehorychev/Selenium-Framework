@@ -28,7 +28,7 @@ With these features, my Java Selenium Framework provides a robust and efficient 
 ## Running Tests: 🚀
 You can run the tests in my framework using different methods:
 
-* *Using Maven:* *
+*Using Maven:*
 You can execute the tests using Maven with the following command:
 
 `mvn clean test -Dbrowser=BROWSERNAME`
@@ -36,7 +36,7 @@ Replace **BROWSERNAME** with **CHROME**, **FIREFOX**, or **EDGE** (case sensitiv
 
 `mvn clean test -Dbrowser=CHROME`
 
-* *Using TestNG XML:* *
+*Using TestNG XML:*
 You can also run the tests by specifying the TestNG XML file. This method allows you to define test configurations and suites in an XML file.
 
 `Right-click on the testng.xml file.`
