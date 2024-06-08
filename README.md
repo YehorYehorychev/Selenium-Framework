@@ -43,6 +43,7 @@ You can also run the tests by specifying the TestNG XML file. This method allows
 `Right-click on the testng.xml file.`
 
 Select Run '...\testng.xml' from the context menu.
+
 ![Screenshot_1](https://github.com/YehorYehorychev/Selenium-Framework/assets/131714384/e17a3e23-318b-4006-a756-3bb6967a6160)
 
 ## Jenkins Integration: 🔄
