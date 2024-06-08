@@ -40,7 +40,7 @@ Replace **BROWSERNAME** with **CHROME**, **FIREFOX**, or **EDGE** (case sensitiv
 *Using TestNG XML:*
 You can also run the tests by specifying the TestNG XML file. This method allows you to define test configurations and suites in an XML file.
 
-`Right-click on the testng.xml file.`
+Right-click on the `testng.xml` file.
 
 Select Run '...\testng.xml' from the context menu.
 
